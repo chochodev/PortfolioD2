@@ -16,6 +16,12 @@
         font: 500 16px helvetica;
         box-sizing: border-box;
     }
+    * {
+        user-select: none;
+    }
+    .lorem {
+        color: #52595f;
+    }
 }
 
 @layer components {

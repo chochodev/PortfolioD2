@@ -16,7 +16,7 @@ module.exports = {
     fontFamily:{
       'open': ['Open Sans', 'sans-serif'],
       'inter': ['Inter Tight', 'sans-serif'],
-      'mono': ['monospace', 'helvetica'],
+      'lato': ['lato', 'helvetica'],
     },
     screens: {
       sm: "300px",
@@ -37,9 +37,9 @@ module.exports = {
         // ash: "#CBCCE8",
 
         headerText: "#001C30",
-        headerTextLight: "#2D0026",
+        headerTextLight: "#52595f",
         linkColor: "#176B87",
-        linkHover: "#176B87",
+        linkHover: "#52595f",
       }
     },
   },

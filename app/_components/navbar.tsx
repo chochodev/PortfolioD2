@@ -1,7 +1,8 @@
 'use client';
 import Image from 'next/image';
+import Link from 'next/link';
 import React, { useState, useEffect } from 'react';
-import { RiFacebookFill, RiWhatsappFill, } from 'react-icons/ri';
+import { RiFacebookFill, RiWhatsappFill, RiLinkedinFill } from 'react-icons/ri';
 
 
 const Navbar: React.FC = () => {
@@ -45,39 +46,39 @@ const Navbar: React.FC = () => {
 
   // Interface
   return (
-    <header className="bg-surface flex justify-between align-center space-x-3 ">
+    <header className="bg-transparent fixed top-0 w-full h-[8rem] flex justify-between align-center gap-x-3 px-[5vw] sm:px-[calc(2rem+10vw)]">
       {/* NAV LOGO */}
-      <div className="flex align-center">
-        <Image src='svgs/mi-logo.svg' alt='LOGO' width='30' height='30' />
-        <h2>
-          Emmanuel Michael
+      <div className="flex align-center text-left h-full gap-x-2">
+        <Image src='svgs/mi-logo.svg' alt='LOGO' width='40' height='40' />
+        <h2 className="w-min h-max my-auto text-headerTextLight font-lato font-[600] tracking-5">
+          EMMANUEL MICHAEL
         </h2>
       </div>
 
       {/* NAV LINKS */}
-      <nav>
-        <ul>
+      <nav className="w-max h-full flex flex-col flex-wrap justify-center gap-y-3">
+        <ul className="flex justify-between gap-x-3">
           <li>
-            <a href='#'>Home</a>
+            <Link href='#' className="relative text-[.875rem] px-2 py-1 font-open font-[600] text-linkColor before:absolute before:bg-primary before:opacity-[.15] before:h-full hover:before:w-full transition-all duration-200 ease-in-out ">HOME</Link>
           </li>
           <li>
-            <a href='#'>Works</a>
+            <Link href='#' className="relative text-[.875rem] px-2 py-1 font-open font-[600] text-linkColor before:absolute before:bg-primary before:opacity-[.15] before:h-full hover:before:w-full transition-all duration-200 ease-in-out ">WORKS</Link>
           </li>
           <li>
-            <a href='#'>About</a>
+            <Link href='#' className="relative text-[.875rem] px-2 py-1 font-open font-[600] text-linkColor before:absolute before:bg-primary before:opacity-[.15] before:h-full hover:before:w-full transition-all duration-200 ease-in-out ">ABOUT</Link>
           </li>
         </ul>
         {/* SOCIALS */}
-        <div>
-          <a href='#'>
-            <RiFacebookFill width='12' height='12' />
-          </a>
-          <a href='#'>
-            <RiWhatsappFill width='12' height='12' />
-          </a>
-          <a href='#'>
-            <RiFacebookFill width='12' height='12' />
-          </a>
+        <div className="w-full flex gap-x-2 justify-end">
+          <Link href='#' aria-label="socials:facebook link icon">
+            <RiFacebookFill width='14' height='14' />
+          </Link>
+          <Link href='#' aria-label="socials:whatsapp link icon">
+            <RiWhatsappFill width='14' height='14' />
+          </Link>
+          <Link href='#' aria-label="socials:facebook link icon">
+            <RiLinkedinFill width='14' height='14' />
+          </Link>
         </div>
       </nav>
     </header>
