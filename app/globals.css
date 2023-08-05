@@ -19,7 +19,10 @@
 }
 
 @layer components {
-    .link {
-        @apply font-mono
+    .ch-link-sm {
+        @apply font-inter text-sm 
+    }
+    .ch-link-sm:hover {
+        @apply underline underline-offset-1 decoration-linkColor decoration-[.2rem]
     }
 }
