@@ -54,7 +54,7 @@ const Lorem: React.FC = () => {
                     width="20"
                     height="20"
                     className="h-8 w-auto"
-                    src="/svgs/mi-logo.svg"
+                    src="/svgs/logo-primary.svg"
                     alt="LOG0"
                   />
                 </div>

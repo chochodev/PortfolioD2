@@ -2,32 +2,44 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import React, { useState, useEffect } from 'react';
-import { RiFacebookFill, RiWhatsappFill, RiLinkedinFill, RiCodeFill, RiCodeSSlashFill } from 'react-icons/ri';
+import { Transition } from '@headlessui/react';
+import { RiFacebookFill, RiWhatsappFill, RiLinkedinFill, RiCodeSSlashFill } from 'react-icons/ri';
 import { IoCodeWorkingSharp } from 'react-icons/io5';
 
 
 const Navbar: React.FC = () => {
   // Nav links Array
-  const navlinks = [
+  const navLinks = [
     {
-      name: 'Home',
+      name: 'HOME',
       url: '#',
       current: false
     },
     {
-      name: 'Works',
+      name: 'WORKS',
       url: '#',
       current: false
     },
     {
-      name: 'About',
+      name: 'ABOUT',
       url: '#',
       current: false
     },
     {
-      name: 'Contact',
+      name: 'BLOG',
       url: '#',
       current: false
+    }
+  ]
+
+  const socialLinks = [
+    {
+      name: 'Facebook',
+      icon: <RiFacebookFill />,
+    },
+    {
+      name: 'WhatsApp',
+      icon: <RiWhatsappFill />,
     }
   ]
 
@@ -72,25 +84,31 @@ const Navbar: React.FC = () => {
     <header className="bg-transparent fixed top-0 w-full h-[12rem] flex justify-between align-center gap-x-3 px-[5vw] sm:px-[calc(2rem+10vw)]">
       {/* NAV LOGO */}
       <div className="flex align-center text-left h-full gap-x-2">
-        <Image src='svgs/mi-logo.svg' alt='LOGO' width='40' height='40' />
-        <h2 className="w-min h-max my-auto text-headerText font-lato font-[600] tracking-[.25rem]">
+        <Image src='svgs/logo-primary.svg' alt='LOGO' width='40' height='40' />
+        <h2 className="w-min h-max my-auto text-headerText font-lato font-[600] tracking-[.2rem]">
           EMMANUEL MICHAEL
         </h2>
       </div>
 
       {/* NAV LINKS */}
-      <nav className="hidden w-max h-full flex flex-col flex-wrap justify-center gap-y-3">
-        <ul className="flex justify-between gap-x-3">
-          <li className="w-max">
-            <Link href='#' className="relative text-[.875rem] font-open font-[600] text-linkColor hover:text-primary transition-all duration-200 ease-in-out ">HOME</Link>
-          </li>
-          <li className="w-max">
-            <Link href='#' className="relative text-[.875rem] font-open font-[600] text-linkColor hover:text-primary transition-all duration-200 ease-in-out ">WORKS</Link>
-          </li>
-          <li className="w-max">
-            <Link href='#' className="relative text-[.875rem] font-open font-[600] text-linkColor hover:text-primary transition-all duration-200 ease-in-out ">ABOUT</Link>
-          </li>
-        </ul>
+      <nav className="w-max h-full flex flex-col flex-wrap justify-center gap-y-3">
+        <Transition
+          as="ul"
+          className="flex justify-between gap-x-4"
+          appear={true}
+          show={scrollDown}
+          enter="transition-opacity duration-[200ms]"
+          
+          leave="transition-opacity duration-[75ms]"
+        >
+          {navLinks.map(({name, url, current}) => {
+            return (
+            <li key={name} className="w-max">
+              <Link href={url} className="relative text-[.875rem] font-open font-[600] text-linkColor hover:text-primary transition-all duration-200 ease-in-out ">{name}</Link>
+            </li>
+            )
+          })}
+        </Transition>
 
         {/* SOCIALS */}
         <div className="w-full flex gap-x-3 justify-end">
@@ -113,7 +131,7 @@ const Navbar: React.FC = () => {
       </nav>
 
       {/* NAV LINKS FOR SMALL SCREEN AND SCROLL DOWN */}
-      <nav className="w-max h-full flex flex-col flex-wrap justify-center gap-y-3">
+      <nav className="hidden w-max h-full flex flex-col flex-wrap justify-center gap-y-3">
         <button onClick={()=>setOpenNav(!openNav)}>
           {!openNav && <IoCodeWorkingSharp width="22" height="22" />}
           {openNav && <RiCodeSSlashFill width="22" height="22" />}
