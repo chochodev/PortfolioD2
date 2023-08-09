@@ -24,8 +24,8 @@ module.exports = {
       'lato': ['lato', 'helvetica'],
     },
     screens: {
-      sm: "300px",
-      md: "768px",
+      sm: "480px",
+      md: "680px",
       lg: "976px",
       xl: "1440px"
     },
@@ -33,16 +33,16 @@ module.exports = {
       colors: {
         surface: "#DAFFFB",
         onSurface: "",
+
         primary: "#64CCC5",
-        // primaryDark: "#EF7E3A",
-        // primaryLight: "#fccc9f",
         secondary: "#176B87",
-        // navyDark: "#344054",
-        // navyLight: "#667085",
-        // ash: "#CBCCE8",
 
         headerText: "#001C30",
         headerTextLight: "#52595f",
+
+        textDark: "#1d1e1e",
+        textLight: "#5e6564",
+
         linkColor: "#176B87",
         linkHover: "#52595f",
       }

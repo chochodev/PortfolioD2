@@ -19,8 +19,23 @@
     * {
         user-select: none;
     }
+    ::-webkit-scrollbar {
+        width: 12px;
+    }
+    ::-webkit-scrollbar-thumb {
+        width: 8px;
+        border: 2px solid #FFFFFF;
+        background: #888888;
+        border-radius: 5px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+        background: #64CCC5;
+    }
+    ::-webkit-scrollbar-track {
+        background: #FFFFFF;
+    }
     .lorem {
-        color: #52595f;
+        color: #1d1e1e;
     }
 }
 
