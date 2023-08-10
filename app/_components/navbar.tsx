@@ -95,7 +95,7 @@ const Navbar: React.FC = () => {
 
   // Interface
   return (
-    <header className="bg-transparent fixed top-0 w-full h-[6rem] md:h-[12rem] flex justify-between align-center gap-x-3 px-[5vw] md:px-[10vw]">
+    <header className="bg-transparent fixed top-0 w-full h-[6rem] md:h-[calc(2vw+8rem)] flex justify-between align-center gap-x-3 px-[5vw] md:px-[10vw]">
       {/* NAV LOGO */}
       <div className="relative z-15 flex align-center text-left h-full gap-x-[.5rem]">
         <Image src='svgs/logo-dark.svg' alt='LOGO' width='45' height='45' />
@@ -167,7 +167,7 @@ const Navbar: React.FC = () => {
             setOpenNav(true);
           }
         }}
-        className="fixed top-[2rem] md:top-[5rem] right-[5vw] md:right-[calc(10vw)] w-max flex flex-col flex-wrap justify-center gap-y-3 hover:bg-[#176B8710] rounded-md px-2 py-2"
+        className="fixed top-[2rem] md:top-[calc(2vw+3rem)] right-[5vw] md:right-[calc(10vw)] w-max flex flex-col flex-wrap justify-center gap-y-3 hover:bg-[#176B8710] rounded-md px-2 py-2"
         show={!scrollDown}
         enter="transform transition-all opacity ease-in-out duration-200"
         enterFrom="translate-x-3 opacity-0"
@@ -212,6 +212,7 @@ const Navbar: React.FC = () => {
             </h2>
           </Transition.Child>
           <Transition.Child 
+            as="button"
             onClick={()=>setOpenNav(false)}
             className="px-[.5rem] py-[.5rem] mr-[-1rem] w-max hover:bg-[#ffffff10] rounded-md"
             enter="transform transition-all opacity ease-in-out delay-[100ms] duration-200"

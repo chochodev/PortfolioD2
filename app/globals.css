@@ -30,6 +30,7 @@
     }
     ::-webkit-scrollbar-thumb:hover {
         background: #64CCC5;
+        transition: .2s ease-in-out;
     }
     ::-webkit-scrollbar-track {
         background: #FFFFFF;
