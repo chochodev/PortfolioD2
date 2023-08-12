@@ -35,12 +35,15 @@
     ::-webkit-scrollbar-track {
         background: #FFFFFF;
     }
-    .lorem {
-        color: #1d1e1e;
-    }
+    /* .lorem {
+        color: #2178b6;
+    } */
 }
 
 @layer components {
+    .bg-surface-gradient {
+        @apply bg-[conic-gradient(at_bottom_left,_var(--tw-gradient-stops))] from-purple-600 via-pink-600 to-secondary
+    }
     .ch-link-sm {
         @apply font-inter text-sm 
     }

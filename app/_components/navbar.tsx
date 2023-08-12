@@ -110,7 +110,7 @@ const Navbar: React.FC = () => {
       {!breakpoint && <Transition
         as="nav"
         className="w-max h-full md:flex hidden flex-col flex-wrap justify-center gap-y-3"
-        appear={true}
+        // appear={true}
         show={scrollDown}
         enter="transform transition-all opacity ease-in-out delay-[50ms] duration-200"
         enterFrom="translate-x-3 opacity-0"
@@ -147,7 +147,7 @@ const Navbar: React.FC = () => {
                 {React.createElement(icon, {size: 15})}
                 <div className="hidden absolute h-3 w-3 bg-primary top-[calc(100%+.5rem)] rotate-45 group-hover:block z-10 transition-all duration-200 ease-in-out "></div>
                 <span 
-                  className="hidden absolute top-[calc(100%+.75rem)] text-[.6rem] text-white bg-primary px-3 py-1 rounded-md group-hover:block z-10 transition-all duration-200 ease-in-out "
+                  className="hidden absolute top-[calc(100%+.75rem)] text-[.6rem] text-white bg-[#CCCCCC] px-3 py-1 rounded-md group-hover:block z-10 transition-all duration-200 ease-in-out "
                 >
                   {name}
                 </span>
@@ -167,7 +167,7 @@ const Navbar: React.FC = () => {
             setOpenNav(true);
           }
         }}
-        className="fixed top-[2rem] md:top-[calc(2vw+3rem)] right-[5vw] md:right-[calc(10vw)] w-max flex flex-col flex-wrap justify-center gap-y-3 hover:bg-[#176B8710] rounded-md px-2 py-2"
+        className="fixed top-[2rem] md:top-[calc(2vw+2.5rem)] right-[5vw] md:right-[calc(10vw)] w-max flex flex-col flex-wrap justify-center gap-y-3 hover:bg-[#176B8710] rounded-md px-2 py-2"
         show={!scrollDown}
         enter="transform transition-all opacity ease-in-out duration-200"
         enterFrom="translate-x-3 opacity-0"
@@ -181,7 +181,6 @@ const Navbar: React.FC = () => {
 
 
       {/* NAVBAR FOR SMALL SCREENS */}
-      {/* {breakpoint &&  */}
       <Transition
         as="nav"
         show={openNav}
@@ -193,8 +192,8 @@ const Navbar: React.FC = () => {
         leaveFrom="w-full height-full opacity-1"
         leaveTo="w-0 h-0 opacity-0"
       >
-        {/* MENUBAR BUTTON */}
         <div className="w-full flex justify-between">
+          {/* MENUBAR LOGO AND TITLE */}
           <Transition.Child 
             className="relative z-15 flex align-center text-left h-full gap-x-[.5rem]"
             enter="transform transition-all opacity ease-in-out delay-[200ms] duration-200"
@@ -211,6 +210,8 @@ const Navbar: React.FC = () => {
               EMMANUEL MICHAEL
             </h2>
           </Transition.Child>
+
+          {/* MENUBAR BUTTON */}
           <Transition.Child 
             as="button"
             onClick={()=>setOpenNav(false)}
@@ -279,7 +280,6 @@ const Navbar: React.FC = () => {
           })}
         </Transition.Child>
       </Transition>
-      {/* } */}
     </header>
   )
 }

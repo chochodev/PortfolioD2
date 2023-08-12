@@ -1,7 +1,6 @@
 import './globals.css';
 import type { Metadata } from 'next';
 import Navbar from './_components/navbar';
-import Lorem from './_components/lorem';
 
 
 export const metadata: Metadata = {
@@ -16,7 +15,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="relative">
+      <body className="relative bg-surface pt-[7rem] md:pt-[10rem]">
         <Navbar />
         {children}
       </body>

@@ -12,6 +12,8 @@ module.exports = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+      boxShadow: {
+      },
     },
     variants: {
       extend: {
@@ -32,7 +34,9 @@ module.exports = {
     extend: {
       colors: {
         surface: "#DAFFFB",
-        onSurface: "",
+        darkSurface: "#001C30",
+        
+        onSurface: "#E03E1A",
 
         primary: "#64CCC5",
         secondary: "#176B87",
@@ -40,8 +44,8 @@ module.exports = {
         headerText: "#001C30",
         headerTextLight: "#52595f",
 
-        textDark: "#1d1e1e",
-        textLight: "#5e6564",
+        textDark: "#001C30",
+        textLight: "#2178b6",
 
         linkColor: "#176B87",
         linkHover: "#52595f",
