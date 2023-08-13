@@ -50,4 +50,8 @@
     .ch-link-sm:hover {
         @apply underline underline-offset-1 decoration-linkColor decoration-[.2rem]
     }
+
+    .ch-input {
+        @apply h-[1.875rem] placeholder:text-[#CCCCCC] text-textDark outline-1 outline-primary/20 hover:bg-[#00000020] focus:outline-2 focus:outline-primary/40
+    }
 }
