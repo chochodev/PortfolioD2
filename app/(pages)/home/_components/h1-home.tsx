@@ -2,11 +2,15 @@ import Image from 'next/image';
 import React from 'react';
 import { RiAddCircleFill } from 'react-icons/ri';
 
-const HomeSection: React.FC = () => {
+interface SectionType {
+  snap_position: string
+}
+
+const HomeSection: React.FC<SectionType> = ({snap_position}) => {
   return (
-    <section className="flex min-h-[100vh]">
+    <section className="flex min-h-[100vh] snap-${snap_position}">
         <div className="max-w-[35rem] flex flex-col gap-y-[1.5rem] ">
-          <h2 className="text-headerText text-[2.75rem] text-bold md:text-[3.5rem] font-bold ">I Build, Develop &<br/>Design Web Apps.</h2>
+          <h2 className="text-textDark text-[2.75rem] text-bold md:text-[3.5rem] font-bold ">I Build, Develop &<br/>Design Web Apps.</h2>
           <div className="flex flex-col">
             <span className="text-[.875rem] font-[400]">Hi, I&apos;m</span>
             <p className="text-[1rem] font-[600]">EMMANUEL MICHAEL.</p>

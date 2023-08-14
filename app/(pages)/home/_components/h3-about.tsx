@@ -1,9 +1,13 @@
 import React from 'react';
 import Image from 'next/image';
 
-const AboutSection: React.FC = () => {
+interface SectionType {
+  snap_position: string
+}
+
+const AboutSection: React.FC<SectionType> = ({snap_position}) => {
   return (
-    <section className="w-full min-h-[100vh] flex flex-col gap-y-[2.5rem]">
+    <section className={`w-full min-h-[100vh] flex flex-col gap-y-[2.5rem] snap-${snap_position}`}>
       <div className="w-full h-max flex justify-evenly items-center text-center flex-wrap gap-x-[.5rem] gap-y-[2.5rem] px-[1rem+5vw]">
         <Image 
           src="/images/profile02.jpg"

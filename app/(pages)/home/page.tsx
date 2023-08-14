@@ -7,11 +7,11 @@ import ContactSection from './_components/h4-contact';
 const HomePage: React.FC = () => {
   return (
     // Dark mode with bg-surface-gradient
-    <main className="bg-surface w-full min-h-screen flex flex-col px-[calc(4vw+1rem)]">
-      <HomeSection />
-      <ProjectSection />
-      <AboutSection />
-      <ContactSection />
+    <main className="bg-surface w-full min-h-screen flex flex-col px-[calc(4vw+1rem)] overflow-y-scroll snap-y-mandatory">
+      <HomeSection snap_position="snap-center" />
+      <ProjectSection snap_position="snap-center" />
+      <AboutSection snap_position="snap-center" />
+      <ContactSection snap_position="snap-center" />
     </main>
   )
 }

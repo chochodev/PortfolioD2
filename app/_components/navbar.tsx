@@ -100,7 +100,7 @@ const Navbar: React.FC = () => {
       <div className="relative z-15 flex align-center text-left h-full gap-x-[.5rem]">
         <Image src='svgs/logo-dark.svg' alt='LOGO' width='45' height='45' />
         <h2
-          className="w-min h-max my-auto text-[.875rem] text-headerText font-lato font-[500] tracking-[.2rem]"
+          className="w-min h-max my-auto text-[.875rem] text-textDark font-lato font-[500] tracking-[.2rem]"
         >
           EMMANUEL MICHAEL
         </h2>

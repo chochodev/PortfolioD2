@@ -33,7 +33,7 @@ module.exports = {
     },
     extend: {
       colors: {
-        surface: "#DAFFFB",
+        surface: "#F5F4FC",
         darkSurface: "#001C30",
         
         onSurface: "#E03E1A",
@@ -41,11 +41,8 @@ module.exports = {
         primary: "#64CCC5",
         secondary: "#176B87",
 
-        headerText: "#001C30",
-        headerTextLight: "#52595f",
-
         textDark: "#001C30",
-        textLight: "#2178b6",
+        textLight: "#7A7A7C",
 
         linkColor: "#176B87",
         linkHover: "#52595f",
