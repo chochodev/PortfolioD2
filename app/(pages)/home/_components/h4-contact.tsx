@@ -2,12 +2,12 @@ import React from 'react';
 import { RiMailLine, RiPhoneLine, RiTwitterLine, RiUser2Line } from 'react-icons/ri';
 
 interface SectionType {
-  snap_position: string
+  extra_styles: string
 }
 
-const ContactSection: React.FC<SectionType> = ({snap_position}) => {
+const ContactSection: React.FC<SectionType> = ({extra_styles}) => {
   return (
-    <section className={`w-full min-h-[100vh] px-[1rem+5vw] snap-${snap_position}`}>
+    <section className={`px-[1rem+5vw] ${extra_styles}`}>
       <div className="w-full flex flex-col items-center text-center gap-[1rem]">
         <h2 className="text-[1.875rem] text-textDark font-bold">CONTACT</h2>
         <p className="text-textLight">Get in touch with me</p>

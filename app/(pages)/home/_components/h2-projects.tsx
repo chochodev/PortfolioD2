@@ -7,10 +7,10 @@ import { RxDotsHorizontal } from 'react-icons/rx';
 import Link from 'next/link';
 
 interface SectionType {
-  snap_position: string
+  extra_styles: string
 }
 
-const ProjectSection: React.FC<SectionType> = ({snap_position}) => {
+const ProjectSection: React.FC<SectionType> = ({extra_styles}) => {
   const projects = [
     {
       name: 'AnimeMe',
@@ -53,7 +53,7 @@ const ProjectSection: React.FC<SectionType> = ({snap_position}) => {
   }, []);
 
   return (
-    <section className={`flex flex-col gap-y-[2.5rem] snap-${snap_position}`}>
+    <section className={`flex flex-col gap-y-[2.5rem] ${extra_styles}`}>
       <div className="flex flex-col gap-y-[1rem]">
         <h2 className="w-max mx-auto text-[1.875rem] text-textDark font-bold tracking-tight ">WORKS</h2>
         <p className="w-max mx-auto text-textLight ">Some of my past works</p>
@@ -72,7 +72,7 @@ const ProjectSection: React.FC<SectionType> = ({snap_position}) => {
                   alt="PROJECT IMAGE" 
                   width={700} 
                   height={700}
-                  className={`h-full md:h-[calc(60%)] w-[12rem] md:w-full rounded-${viewportWidth < 680? 'l' : 't'}-md opacity-[85%] object-cover`} 
+                  className={`h-full md:h-[calc(60%)] w-[12rem] md:w-full rounded-${viewportWidth < 680? 'l' : 't'}-md object-cover`} 
                 />
                 <div 
                   className={`bg-white/90 flex flex-col gap-y-[.75rem] py-[1rem] px-[.75rem] rounded-${viewportWidth < 680? 'r' : 'b'}-md md:rounded-b-md shadow-sm shadow-surface/50 group-hover:bg-surface transition-all ease-in-out duration-200`}
