@@ -8,9 +8,10 @@ interface SectionType {
 
 const HomeSection: React.FC<SectionType> = ({extra_styles}) => {
   return (
-    <section className={`flex justify-between items-center min-[720px]:flex-row flex-col git${extra_styles}`}>
+    // Add those subtle shapes and all to the background
+    <section className={`flex justify-between items-center mi_md:flex-row flex-col git${extra_styles}`}>
       <div className="max-w-[40rem] flex flex-col gap-y-[1.5rem] p-[calc(4vw+1rem)] sm:pt-[7rem] pt-[3rem]">
-        <h2 className="text-textDark text-[2.75rem] text-bold min-[720px]:text-[3.5rem] font-bold ">
+        <h2 className="text-textDark text-[2.5rem] text-bold mi_md:text-[3.5rem] font-bold ">
           I Build, Develop &<br/>Design Web Apps.
         </h2>
         <div className="flex flex-col">
@@ -35,7 +36,7 @@ const HomeSection: React.FC<SectionType> = ({extra_styles}) => {
           <p className="h-max text-white text-[.875rem] tracking-[.15rem]">Hire me</p>
         </button>
       </div>
-      <div className="relative min-h-[40rem] h-full min-[720px]:w-max w-full bg-darkSurface flex justify-center items-center align-center min-[720px]:justify-end min-[720px]:px-[calc(3vw+2rem)] min-[720px]:pt-[7rem] border-l-2 border-primary">
+      <div className="relative min-h-[40rem] h-full mi_md:w-max w-full bg-darkSurface flex justify-center items-center align-center mi_md:justify-end mi_md:px-[calc(3vw+2rem)] mi_md:pt-[7rem] border-l-2 border-primary">
         <Image 
           src="/images/profile01.jpg" 
           alt="PROFILE IMAGE" 
