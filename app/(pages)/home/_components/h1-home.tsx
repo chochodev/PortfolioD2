@@ -36,7 +36,7 @@ const HomeSection: React.FC<SectionType> = ({extra_styles}) => {
           <p className="h-max text-white text-[.875rem] tracking-[.15rem]">Hire me</p>
         </button>
       </div>
-      <div className="relative min-h-[40rem] h-full mi_md:w-max w-full bg-darkSurface flex justify-center items-center align-center mi_md:justify-end mi_md:px-[calc(3vw+2rem)] mi_md:pt-[7rem] border-l-2 border-primary">
+      <div className="relative z-1 min-h-[40rem] h-full mi_md:w-max w-full bg-darkSurface flex justify-center items-center align-center mi_md:justify-end mi_md:px-[calc(3vw+2rem)] mi_md:pt-[7rem] border-l-2 border-primary">
         <Image 
           src="/images/profile01.jpg" 
           alt="PROFILE IMAGE" 
@@ -44,7 +44,7 @@ const HomeSection: React.FC<SectionType> = ({extra_styles}) => {
           height={3500}
           className="h-[28rem] w-[calc(15rem+5vw)] object-cover object-right outline outline-[2px] outline-primary outline-offset-[4px] rounded-[10rem]"
         />
-        <div className="absolute top-[2vw] left-[2vw] bg-onSurface w-[2rem+1vw] h-[2rem+1vw] rounded-[50%]"></div>
+        <div className="absolute z-5 top-[2vw] left-[2vw] bg-onSurface w-[2rem+1vw] h-[2rem+1vw] rounded-[50%]"></div>
       </div>
     </section>
   )
