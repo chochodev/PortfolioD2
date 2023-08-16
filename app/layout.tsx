@@ -15,7 +15,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="relative bg-surface overflow-y-hidden">
+      <body className="relative bg-surface w-full h-screen flex flex-col overflow-y-scroll scroll-pt-[2rem] snap-y snap-mandatory">
         <Navbar />
         {children}
       </body>
