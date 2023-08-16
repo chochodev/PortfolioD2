@@ -31,9 +31,6 @@ const AboutSection: React.FC<SectionType> = ({extra_styles}) => {
           </p>
         </div>
       </div>
-
-      <div className="w-[80%] md:max-w-[55rem] max-h-[20rem] flex text-center justify-center flex-col p-[2vw+1rem] mx-auto rounded-md border-2 border-primary">
-      </div>
     </section>
   )
 }

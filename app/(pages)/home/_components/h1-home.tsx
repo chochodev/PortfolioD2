@@ -8,9 +8,9 @@ interface SectionType {
 
 const HomeSection: React.FC<SectionType> = ({extra_styles}) => {
   return (
-    <section className={`flex justify-between items-center md:flex-row flex-col git${extra_styles}`}>
+    <section className={`flex justify-between items-center [720px]:flex-row flex-col git${extra_styles}`}>
       <div className="max-w-[40rem] flex flex-col gap-y-[1.5rem] p-[calc(4vw+1rem)] sm:pt-[7rem] pt-[3rem]">
-        <h2 className="text-textDark text-[2.75rem] text-bold md:text-[3.5rem] font-bold ">
+        <h2 className="text-textDark text-[2.75rem] text-bold [720px]:text-[3.5rem] font-bold ">
           I Build, Develop &<br/>Design Web Apps.
         </h2>
         <div className="flex flex-col">
@@ -29,20 +29,21 @@ const HomeSection: React.FC<SectionType> = ({extra_styles}) => {
             </p>
         </div>
         <button
-          className="bg-darkSurface w-max h-max flex gap-x-1 items-center justify-center px-[1rem] py-[.5rem] text-white rounded-[2rem] shadow-sm hover:shadow-darkSurface hover:shadow-lg focus:outline-1 focus:outline-darkSurface/50 transition-all duration-250 ease-in-out"
+          className="bg-darkSurface w-max h-max flex gap-x-1 items-center justify-center px-[1rem] py-[.5rem] text-white rounded-[2rem] shadow-sm hover:shadow-darkSurface/50 hover:shadow-md focus:outline-1 focus:outline-darkSurface/50 transition-all duration-250 ease-in-out"
         >
           <RiAddCircleFill size="25" color="white" />
           <p className="h-max text-white text-[.875rem] tracking-[.15rem]">Hire me</p>
         </button>
       </div>
-      <div className="h-full bg-darkSurface flex justify-end p-[calc(3vw+2rem)] sm:pt-[7rem] pt-[3rem] border-l-2 border-primary">
+      <div className="relative min-h-[40rem] h-full [720px]:w-max w-full bg-darkSurface flex justify-center items-center align-center [720px]:justify-end [720px]:px-[calc(3vw+2rem)] [720px]:pt-[7rem] border-l-2 border-primary">
         <Image 
           src="/images/profile01.jpg" 
           alt="PROFILE IMAGE" 
           width={2500}
           height={3500}
-          className="h-[30rem] w-[calc(15rem+5vw)] object-cover object-right outline outline-[2px] outline-primary outline-offset-[4px] rounded-[10rem]"
+          className="h-[28rem] w-[calc(15rem+5vw)] object-cover object-right outline outline-[2px] outline-primary outline-offset-[4px] rounded-[10rem]"
         />
+        <div className="absolute top-[2vw] left-[2vw] bg-onSurface w-[2rem+1vw] h-[2rem+1vw] rounded-[50%]"></div>
       </div>
     </section>
   )
