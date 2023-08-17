@@ -8,37 +8,55 @@ interface SectionType {
 
 const ContactSection: React.FC<SectionType> = ({extra_styles}) => {
   return (
-    <section className={`px-[1rem+5vw] ${extra_styles}`}>
-      <div className="w-full flex flex-col items-center text-center gap-[1rem]">
+    <section className={`md:px-[5rem] px-[1rem+5vw] ${extra_styles}`}>
+      <div className="w-full flex flex-col items-center text-center gap-[1rem] my-[3rem]">
         <h2 className="text-[1.875rem] text-textDark font-bold">CONTACT</h2>
         <p className="text-textLight">Get in touch with me</p>
       </div>
 
-      <div className="w-full flex lg:flex-row flex-col flex-wrap justify-between gap-[.8rem + 5vw]">
+      <div className="w-full flex lg:flex-row flex-col flex-wrap justify-between gap-[1.25rem + 5vw] p-[1rem]">
         {/* SOCIAL LINKS */}
-        <div className="max-w-[20rem] w-full flex flex-col items-start gap-y-[.25rem]">
-          <Link href="#" className="h-[2.5rem] w-full flex items-center align-center px-[.5rem] gap-x-[.5rem] hover:bg-primary/40 rounded-md hover:shadow-sm hover:shadow-slate-200">
-            <RiPhoneLine size="20" color="#0060a5" />
-            <p className="text-textLight text-[.875rem]">+234 903 910 8667</p>
+        <div className="max-w-[20rem] w-full flex flex-col items-start gap-y-[.5rem]">
+          <Link 
+            href="#" 
+            className="bg-slate-100 h-max w-full flex px-[.5rem] gap-x-[.5rem] py-[.875rem] hover:bg-slate-200 rounded-md hover:shadow-sm hover:shadow-slate-200 transition-all duration-200 ease-in-out"
+          >
+            <RiPhoneLine size="25" color="#0060a5" />
+            <div className="flex flex-col gap-y-[.5rem] ">              
+              <p className="text-textDark text-[1.07rem] font-bold">+234 903 910 8667</p>
+              <p className="text-textDark text-[1.07rem]">Call me: 8am - 6pm</p>
+            </div>
           </Link>
-          <Link href="#" className="h-[2.5rem] w-full flex items-center align-center px-[.5rem] gap-x-[.5rem] hover:bg-primary/40 rounded-md hover:shadow-sm hover:shadow-slate-200">
-            <RiMailLine size="20" color="#0060a5" />
-            <p className="text-textLight text-[.875rem]">michochoprogrammer@gmail.com</p>
+          <Link 
+            href="#" 
+            className="bg-slate-100 h-max w-full flex px-[.5rem] gap-x-[.5rem] py-[.875rem] hover:bg-slate-200 rounded-md hover:shadow-sm hover:shadow-slate-200 transition-all duration-200 ease-in-out"
+          >
+            <RiMailLine size="25" color="#0060a5" />
+            <div className="flex flex-col gap-y-[.5rem] ">              
+              <p className="text-textDark text-[1rem] font-bold">michochoprogrammer@gmail.com</p>
+              <p className="text-textDark text-[1.07rem]">Send me a message anytime</p>
+            </div>
           </Link>
-          <Link href="#" className="h-[2.5rem] w-full flex items-center align-center px-[.5rem] gap-x-[.5rem] hover:bg-primary/40 rounded-md hover:shadow-sm hover:shadow-slate-200">
-            <RiTwitterLine size="20" color="#0060a5" />
-            <p className="text-textLight text-[.875rem]">Mi_CHOCHO</p>
+          <Link 
+            href="#" 
+            className="bg-slate-100 h-max w-full flex px-[.5rem] gap-x-[.5rem] py-[.875rem] hover:bg-slate-200 rounded-md hover:shadow-sm hover:shadow-slate-200 transition-all duration-200 ease-in-out"
+          >
+            <RiTwitterLine size="25" color="#0060a5" />
+            <div className="flex flex-col gap-y-[.5rem] ">              
+              <p className="text-textDark text-[1.07rem] font-bold">Mi_CHOCHO</p>
+              <p className="text-textDark text-[1.07rem]">Chat me up anytime</p>
+            </div>
           </Link>
         </div>
 
         {/* CONTACT FORM */}
-        <form action="#" className="w-full flex-1 flex flex-col md:flex-row p-[1rem] gap-x-[.5rem] gap-y-[1rem]">
-          <div className="flex flex-col gap-[.5rem]  ">
-            <div className="relative flex items-center justify-center">
+        <form action="#" className="w-full flex-1 flex flex-col md:flex-row gap-x-[.5rem] gap-y-[1rem]">
+          <div className=" w-full md:w-[40vw] lg:w-[30vw] flex flex-col gap-[.5rem] ">
+            <div className="relative w-full flex items-center">
               <RiUser6Line size="25" color="#7A7A7C" className="absolute left-[.5rem]" />
               <input type="text" name="name" placeholder="Full name" className="ch-input h-[2.5rem] w-full pl-[2.25rem]" />
             </div>
-            <div className="relative flex items-center justify-center">
+            <div className="relative w-full flex items-center">
               <RiAtLine size="25" color="#7A7A7C" className="absolute left-[.5rem]" />
               <input type="email" name="email" placeholder="Email Address" className="ch-input h-[2.5rem] w-full pl-[2.25rem]" />
             </div>
