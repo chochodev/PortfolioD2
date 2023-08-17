@@ -11,7 +11,7 @@ const HomeSection: React.FC<SectionType> = ({extra_styles}) => {
     // Add those subtle shapes and all to the background
     <section className={`flex justify-between items-center mi_md:flex-row flex-col git${extra_styles}`}>
       <div className="max-w-[40rem] flex flex-col gap-y-[1.5rem] p-[calc(4vw+1rem)] sm:pt-[7rem] pt-[3rem]">
-        <h2 className="text-textDark text-[2.5rem] text-bold mi_md:text-[3.5rem] font-bold ">
+        <h2 className="text-textDark text-[2.5rem] md:text-[3rem] text-bold lg:text-[3.5rem] font-bold ">
           I Build, Develop &<br/>Design Web Apps.
         </h2>
         <div className="flex flex-col">
@@ -36,7 +36,7 @@ const HomeSection: React.FC<SectionType> = ({extra_styles}) => {
           <p className="h-max text-white text-[.875rem] tracking-[.15rem]">Hire me</p>
         </button>
       </div>
-      <div className="relative z-1 min-h-[40rem] h-full mi_md:w-max w-full bg-darkSurface flex justify-center items-center align-center mi_md:justify-end mi_md:px-[calc(3vw+2rem)] mi_md:pt-[7rem] border-l-2 border-primary">
+      <div className="relative z-1 min-h-[40rem] h-full mi_md:w-max w-full bg-darkSurface flex justify-center items-center align-center mi_md:justify-end mi_md:px-[calc(3vw+2rem)] mi_id-lg:px-[calc(2vw+1.5rem)] mi_md:pt-[7rem] border-l-2 border-primary">
         <Image 
           src="/images/profile01.jpg" 
           alt="PROFILE IMAGE" 
@@ -44,7 +44,7 @@ const HomeSection: React.FC<SectionType> = ({extra_styles}) => {
           height={3500}
           className="h-[28rem] w-[calc(15rem+5vw)] object-cover object-right outline outline-[2px] outline-primary outline-offset-[4px] rounded-[10rem]"
         />
-        <div className="absolute z-5 top-[2vw] left-[2vw] bg-onSurface w-[2rem+1vw] h-[2rem+1vw] rounded-[50%]"></div>
+        <div className="absolute z-50 top-[2vw] left-[2vw] bg-onSurface w-[2rem+1vw] h-[2rem+1vw] rounded-[50%]"></div>
       </div>
     </section>
   )

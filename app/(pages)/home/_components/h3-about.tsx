@@ -7,8 +7,8 @@ interface SectionType {
 
 const AboutSection: React.FC<SectionType> = ({extra_styles}) => {
   return (
-    <section className={`bg-darkSurface flex md:flex-row flex-col justify-evenly items-center flex-wrap gap-x-[.5rem] gap-y-[2.5rem] ${extra_styles}`}>
-      <div className="w-[80%] md:w-[30%] h-max flex justify-center text-start flex-col gap-y-[.875rem] leading-[1.5rem]">
+    <section className={`bg-darkSurface flex mi_md:flex-row flex-col justify-between flex-wrap gap-x-[.5rem] gap-y-[2.5rem] ${extra_styles}`}>
+      <div className="w-[80%] mi_md:w-[30%] h-max flex justify-center text-start flex-col gap-y-[.875rem] leading-[1.5rem]">
         <p className="w-full h-max text-[1.07rem] text-white spacing-x-[.05rem]">
           Hi there! I’m Emmanuel Michael, a versatile full-stack web developer with expertise in enhancing and optimizing websites, I specialize in creating modern, user-friendly, and responsive web designs. I possess strong skills in developing web applications from the ground up.
         </p>
