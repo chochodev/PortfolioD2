@@ -43,10 +43,10 @@ module.exports = {
         secondary: "#176B87",
 
         textDark: "#001C30",
-        textLight: "#7A7A7C",
+        textLight: "#94A3B8",
 
-        linkColor: "#176B87",
-        linkHover: "#52595f",
+        linkColor: "#475569",
+        linkHover: "#94A3B8",
       }
     },
   },
