@@ -3,8 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React, { useState, useEffect } from 'react';
 import { Transition } from '@headlessui/react';
-import { RiFacebookFill, RiWhatsappFill, RiGithubFill, RiLinkedinFill, RiCodeSSlashFill } from 'react-icons/ri';
-import { CgMenuGridO, CgMenuGridR } from 'react-icons/cg';
+import { RiFacebookFill, RiWhatsappFill, RiLinkedinFill } from 'react-icons/ri';
 import { SiCoderwall, SiPluscodes } from 'react-icons/si';
 
 
@@ -13,22 +12,22 @@ const Navbar: React.FC = () => {
   const navLinks = [
     {
       name: 'HOME',
-      url: '#',
+      url: '/home',
       current: false
     },
     {
       name: 'WORKS',
-      url: '#',
+      url: '/',
       current: false
     },
     {
       name: 'BLOG',
-      url: '#',
+      url: '/about',
       current: false
     },
     {
       name: 'CONTACT',
-      url: '#',
+      url: '/contact',
       current: false
     },
   ]
@@ -37,14 +36,17 @@ const Navbar: React.FC = () => {
     {
       name: 'Facebook',
       icon: RiFacebookFill,
+      link: 'https://web.facebook.com/profile.php?id=100082896713464',
     },
     {
       name: 'WhatsApp',
       icon: RiWhatsappFill,
+      link: 'https://wa.me/23439108667',
     },
     {
       name: 'LinkdedIn',
       icon: RiLinkedinFill,
+      link: 'https://www.linkedin.com/in/emmanuel-michael-728678217/',
     }
   ]
 
@@ -141,9 +143,9 @@ const Navbar: React.FC = () => {
           leaveFrom="opacity-1"
           leaveTo="opacity-0"
         >
-          {socialLinks.map(({name, icon}) => {
+          {socialLinks.map(({name, icon, link}) => {
             return (
-              <Link key={name} href="#" aria-label={`socials:${name} link icon`} className="group relative flex justify-center align-center text-center">
+              <Link key={name} href={link} aria-label={`socials:${name} link icon`} className="group relative flex justify-center align-center text-center">
                 {React.createElement(icon, {size: 18, color: "#94A3B8"})}
                 <div className="hidden absolute h-3 w-3 bg-primary top-[calc(100%+.5rem)] rotate-45 group-hover:block z-10 transition-all duration-200 ease-in-out "></div>
                 <span 

@@ -26,7 +26,7 @@ const ProjectSection: React.FC<SectionType> = ({extra_styles}) => {
     },
     {
       name: 'MallGo',
-      url: '#',
+      url: 'https://github.com/chochoprogrammer/Ecommerce-01-Frontend',
       image: 'project01.png',
       desc: 'An E-commerce website with common and special function that make this unique user friendly.',
     },
@@ -64,7 +64,7 @@ const ProjectSection: React.FC<SectionType> = ({extra_styles}) => {
             return (
             <li 
               key={index} 
-              className="group w-[80%] md:w-[calc(15rem+5vw)] h-[15rem] md:h-[25rem] rounded-t-md shadow-sm hover:shadow-md hover:shadow-secondary/20 hover:translate-y-[-.5rem] transition-translate duration-500 ease-in-out"
+              className="group w-[90%] md:w-[calc(15rem+5vw)] h-[15rem] md:h-[25rem] rounded-t-md shadow-sm hover:shadow-md hover:shadow-secondary/20 hover:translate-y-[-.5rem] transition-translate duration-500 ease-in-out"
             >
               <Link href={project.url} className="flex md:flex-col w-full h-full">
                 <Image 
