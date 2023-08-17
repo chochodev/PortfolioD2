@@ -51,7 +51,7 @@ const ContactSection: React.FC<SectionType> = ({extra_styles}) => {
 
         {/* CONTACT FORM */}
         <form action="#" className="w-full flex-1 flex flex-col md:flex-row gap-x-[.5rem] gap-y-[1rem]">
-          <h2 className="text-textDark text-[2.5rem] font-bold tracking-[.25rem]mb-[.5rem] border-b-[1px] border-slate-400">Message Me...</h2>
+          {/* <h2 className="text-textDark text-[1.05rem] font-bold tracking-[.25rem]mb-[.5rem] border-b-[1px] border-slate-400">Message Me...</h2> */}
           <div className=" w-full md:w-[40vw] lg:w-[30vw] flex flex-col gap-[.5rem] ">
             <div className="relative w-full flex items-center">
               <RiUser6Line size="25" color="#7A7A7C" className="absolute left-[.5rem]" />
