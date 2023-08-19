@@ -22,7 +22,7 @@ const ProjectSection: React.FC<SectionType> = ({extra_styles}) => {
       name: 'DesignHive',
       url: '#',
       image: 'project01.png',
-      desc: 'This is a course app project comprising of only tech related courses with complex fuctionalities.',
+      desc: 'This is a course app project of only tech related courses with complex fuctionalities.',
     },
     {
       name: 'MallGo',
@@ -64,15 +64,15 @@ const ProjectSection: React.FC<SectionType> = ({extra_styles}) => {
             return (
             <li 
               key={index} 
-              className="group w-[90%] md:w-[calc(15rem+5vw)] h-[15rem] md:h-[25rem] rounded-t-md shadow-sm hover:shadow-md hover:shadow-secondary/20 hover:translate-y-[-.5rem] transition-translate duration-500 ease-in-out"
+              className="group w-full md:w-[calc(15rem+5vw)] h-[15rem] md:h-[25rem] rounded-t-md shadow-sm hover:shadow-md hover:shadow-secondary/20 hover:translate-y-[-.5rem] transition-translate duration-500 ease-in-out"
             >
-              <Link href={project.url} className="flex md:flex-col w-full h-full">
+              <Link href={project.url} className="w-full h-full flex md:flex-col ">
                 <Image 
                   src={`/images/${project.image}`} 
                   alt="PROJECT IMAGE" 
                   width={700} 
                   height={700}
-                  className={`h-full md:h-[calc(60%)] w-[12rem] md:w-full rounded-${viewportWidth < 680? 'l' : 't'}-md object-cover`} 
+                  className={`h-full md:h-[calc(60%)] w-[65%] md:w-full rounded-${viewportWidth < 680? 'l' : 't'}-md object-cover`} 
                 />
                 <div 
                   className={`bg-white/90 flex flex-col gap-y-[.75rem] py-[1rem] px-[.75rem] rounded-${viewportWidth < 680? 'r' : 'b'}-md md:rounded-b-md shadow-sm shadow-surface/50 group-hover:bg-surface transition-all ease-in-out duration-200`}
@@ -83,7 +83,7 @@ const ProjectSection: React.FC<SectionType> = ({extra_styles}) => {
                   <p className="w-full text-textLight text-sm line-clamp-2">
                     {project.desc}
                   </p>
-                  <div className="flex justify-between">
+                  <div className="h-full flex justify-between items-end">
                     <RiGithubFill size="35" color="#001C30" />
                     <div className="flex h-max items-center justify-center">
                       <RxDotsHorizontal size="30" color="#001C30" />

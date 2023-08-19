@@ -11,8 +11,8 @@ const HomeSection: React.FC<SectionType> = ({extra_styles}) => {
     // Add those subtle shapes and all to the background
     <section className={`flex justify-between items-center mi_md:flex-row flex-col git${extra_styles}`}>
       <div className="max-w-[40rem] flex flex-col gap-y-[1.5rem] p-[calc(4vw+1rem)] sm:pt-[7rem] pt-[3rem]">
-        <h2 className="text-textDark text-[2.5rem] md:text-[3rem] text-bold lg:text-[3.5rem] font-bold ">
-          I Build, Develop &<br/>Design Web Apps.
+        <h2 className="max-w-[30rem] text-textDark text-[2.5rem] md:text-[3rem] text-bold lg:text-[3.5rem] font-bold max-[480px]:pt-[4rem]">
+          I Build, Develop & Design Web Apps.
         </h2>
         <div className="flex flex-col">
           <span className="text-[.875rem] font-[300]">Hi, I&apos;m</span>

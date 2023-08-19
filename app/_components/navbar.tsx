@@ -97,14 +97,14 @@ const Navbar: React.FC = () => {
 
   // Interface
   return (
-    <header className="bg-transparent fixed z-20 top-0 w-full h-[6rem] md:h-[calc(2vw+8rem)] flex justify-between align-center gap-x-3 px-[2rem] md:px-[5rem]">
+    <header className="bg-transparent fixed z-20 top-0 left-0 w-full h-[6rem] md:h-[calc(2vw+8rem)] flex justify-between align-center gap-x-[.5rem] px-[2rem] md:px-[5rem]">
       {/* NAV LOGO */}
       <div className="relative z-15 flex align-center text-left h-full gap-x-[.5rem]">
         <Image src='svgs/logo-dark.svg' alt='LOGO' width='45' height='45' />
         <h2
           className="w-min h-max my-auto text-[.875rem] text-textDark font-lato font-[500] tracking-[.2rem]"
         >
-          EMMANUEL MICHAEL
+          EMMANUEL MICHAELh
         </h2>
       </div>
 
