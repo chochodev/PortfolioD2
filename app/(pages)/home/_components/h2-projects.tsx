@@ -72,18 +72,18 @@ const ProjectSection: React.FC<SectionType> = ({extra_styles}) => {
                   alt="PROJECT IMAGE" 
                   width={700} 
                   height={700}
-                  className={`h-full md:h-[calc(60%)] w-[65%] md:w-full rounded-${viewportWidth < 680? 'l' : 't'}-md object-cover`} 
+                  className={`h-full md:h-[calc(60%)] w-[60%] md:w-full rounded-${viewportWidth < 680? 'l' : 't'}-md object-cover`} 
                 />
                 <div 
-                  className={`bg-white/90 flex flex-col gap-y-[.75rem] py-[1rem] px-[.75rem] rounded-${viewportWidth < 680? 'r' : 'b'}-md md:rounded-b-md shadow-sm shadow-surface/50 group-hover:bg-surface transition-all ease-in-out duration-200`}
+                  className={`bg-white/90 min-h-[2rem] flex flex-col gap-y-[.75rem] py-[1rem] px-[.75rem] rounded-${viewportWidth < 680? 'r' : 'b'}-md md:rounded-b-md shadow-sm shadow-surface/50 group-hover:bg-surface transition-all ease-in-out duration-200`}
                 >
-                  <h3 className="text-[1.6rem] md:text-[2rem] text-textDark font-bold">
+                  <h3 className="text-[1.4rem] md:text-[2rem] text-textDark font-bold">
                     {project.name}
                   </h3>
                   <p className="w-full text-textLight text-sm line-clamp-2">
                     {project.desc}
                   </p>
-                  <div className="h-full flex justify-between items-end">
+                  <div className="h-full md:h-max flex justify-between items-end">
                     <RiGithubFill size="35" color="#001C30" />
                     <div className="flex h-max items-center justify-center">
                       <RxDotsHorizontal size="30" color="#001C30" />
