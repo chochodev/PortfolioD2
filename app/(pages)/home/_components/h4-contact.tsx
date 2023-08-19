@@ -19,32 +19,35 @@ const ContactSection: React.FC<SectionType> = ({extra_styles}) => {
         <div className="max-w-[20rem] w-full flex flex-col items-start gap-y-[.5rem]">
           <Link 
             href="#" 
+            target="_blank"
             className="bg-slate-100 h-max w-full flex px-[.5rem] gap-x-[.5rem] py-[.875rem] hover:bg-slate-200 rounded-md hover:shadow-sm hover:shadow-slate-200 transition-all duration-200 ease-in-out"
           >
             <RiPhoneLine size="25" color="#0060a5" />
             <div className="flex flex-col gap-y-[.5rem] ">              
-              <p className="text-textDark text-[1.07rem] font-bold">+234 903 910 8667</p>
-              <p className="text-textDark text-[1.07rem]">Call me: 8am - 6pm</p>
+              <p className="text-textDark text-[.875rem] md:text-[1.07rem] font-bold">+234 903 910 8667</p>
+              <p className="text-textDark text-[.875rem] md:text-[1.07rem]">Call me: 8am - 6pm</p>
             </div>
           </Link>
           <Link 
             href="#" 
+            target="_blank"
             className="bg-slate-100 h-max w-full flex px-[.5rem] gap-x-[.5rem] py-[.875rem] hover:bg-slate-200 rounded-md hover:shadow-sm hover:shadow-slate-200 transition-all duration-200 ease-in-out"
           >
             <RiMailLine size="25" color="#0060a5" />
             <div className="flex flex-col gap-y-[.5rem] ">              
-              <p className="text-textDark text-[1rem] font-bold">michochoprogrammer@gmail.com</p>
+              <p className="text-textDark text-[.875rem] md:text-[1rem] font-bold">michochoprogrammer@gmail.com</p>
               <p className="text-textDark text-[1.07rem]">Send me a message anytime</p>
             </div>
           </Link>
           <Link 
             href="#" 
+            target="_blank"
             className="bg-slate-100 h-max w-full flex px-[.5rem] gap-x-[.5rem] py-[.875rem] hover:bg-slate-200 rounded-md hover:shadow-sm hover:shadow-slate-200 transition-all duration-200 ease-in-out"
           >
             <RiTwitterLine size="25" color="#0060a5" />
             <div className="flex flex-col gap-y-[.5rem] ">              
-              <p className="text-textDark text-[1.07rem] font-bold">Mi_CHOCHO</p>
-              <p className="text-textDark text-[1.07rem]">Chat me up anytime</p>
+              <p className="text-textDark text-[.875rem] md:text-[1.07rem] font-bold">Mi_CHOCHO</p>
+              <p className="text-textDark text-[.875rem] md:text-[1.07rem]">Chat me up anytime</p>
             </div>
           </Link>
         </div>

@@ -104,7 +104,7 @@ const Navbar: React.FC = () => {
         <h2
           className="w-min h-max my-auto text-[.875rem] text-textDark font-lato font-[500] tracking-[.2rem]"
         >
-          EMMANUEL MICHAELh
+          EMMANUEL MICHAEL
         </h2>
       </div>
 

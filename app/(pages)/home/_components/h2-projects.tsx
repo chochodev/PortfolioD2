@@ -14,13 +14,13 @@ const ProjectSection: React.FC<SectionType> = ({extra_styles}) => {
   const projects = [
     {
       name: 'AnimeMe',
-      url: '#',
+      url: 'https://github.com/chochoprogrammer/AnimeMe',
       image: 'project01.png',
       desc: 'This is a project for anime lovers. It is for reviewing, discussing and exploring animes.',
     },
     {
       name: 'DesignHive',
-      url: '#',
+      url: 'https://github.com/chochoprogrammer/Course-App',
       image: 'project01.png',
       desc: 'This is a course app project of only tech related courses with complex fuctionalities.',
     },
@@ -64,26 +64,26 @@ const ProjectSection: React.FC<SectionType> = ({extra_styles}) => {
             return (
             <li 
               key={index} 
-              className="group w-full md:w-[calc(15rem+5vw)] h-[15rem] md:h-[25rem] rounded-t-md shadow-sm hover:shadow-md hover:shadow-secondary/20 hover:translate-y-[-.5rem] transition-translate duration-500 ease-in-out"
+              className="group w-full md:w-[calc(15rem+5vw)] h-[25rem] rounded-t-md shadow-sm hover:shadow-md hover:shadow-secondary/20 hover:translate-y-[-.5rem] transition-translate duration-500 ease-in-out"
             >
-              <Link href={project.url} className="w-full h-full flex md:flex-col ">
+              <Link href={project.url} target="_blank" className="w-full h-full flex flex-col ">
                 <Image 
                   src={`/images/${project.image}`} 
                   alt="PROJECT IMAGE" 
                   width={700} 
                   height={700}
-                  className={`h-full md:h-[calc(60%)] w-[60%] md:w-full rounded-${viewportWidth < 680? 'l' : 't'}-md object-cover`} 
+                  className={`w-full h-[calc(60%)] rounded-t-md object-cover`} 
                 />
                 <div 
-                  className={`bg-white/90 min-h-[2rem] flex flex-col gap-y-[.75rem] py-[1rem] px-[.75rem] rounded-${viewportWidth < 680? 'r' : 'b'}-md md:rounded-b-md shadow-sm shadow-surface/50 group-hover:bg-surface transition-all ease-in-out duration-200`}
+                  className={`bg-white/90 leading-[2rem] flex flex-col gap-y-[.75rem] py-[1rem] px-[.75rem] rounded-b-md shadow-sm shadow-surface/50 group-hover:bg-surface transition-all ease-in-out duration-200`}
                 >
-                  <h3 className="text-[1.4rem] md:text-[2rem] text-textDark font-bold">
+                  <h3 className="text-[2rem] text-textDark font-bold">
                     {project.name}
                   </h3>
                   <p className="w-full text-textLight text-sm line-clamp-2">
                     {project.desc}
                   </p>
-                  <div className="h-full md:h-max flex justify-between items-end">
+                  <div className="h-max flex justify-between items-end">
                     <RiGithubFill size="35" color="#001C30" />
                     <div className="flex h-max items-center justify-center">
                       <RxDotsHorizontal size="30" color="#001C30" />
