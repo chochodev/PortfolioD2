@@ -4,7 +4,7 @@ import ContactSection from '../home/_components/h4-contact';
 const ContactPage = () => {
   return (
     <>
-      <ContactSection extra_styles="sm:pt-[7rem] pt-[3rem]" />
+      <ContactSection extra_styles="sm:pt-[7rem] pt-[4rem]" />
     </>
   );
 }

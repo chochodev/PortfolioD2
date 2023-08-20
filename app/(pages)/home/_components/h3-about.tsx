@@ -7,13 +7,13 @@ interface SectionType {
 
 const AboutSection: React.FC<SectionType> = ({extra_styles}) => {
   return (
-    <section className={`bg-darkSurface ${extra_styles}`}>
+    <section id="about" className={`bg-darkSurface ${extra_styles}`}>
       <div className="w-full flex flex-col items-center text-center gap-[1rem] mx-auto mb-[3rem]">
         <h2 className="text-[1.875rem] text-white font-bold">ABOUT</h2>
         <p className="text-slate-200">A few words about me</p>
       </div>
       <div className="w-full flex mi_md:flex-row flex-col justify-between flex-wrap gap-x-[.5rem] gap-y-[2.5rem]">
-        <div className="w-[80%] mi_md:w-[40%] h-max flex justify-center text-start flex-col gap-y-[.875rem] leading-[1.5rem]">
+        <div className="w-full mi_md:w-[40%] h-max flex justify-center text-start flex-col gap-y-[.875rem] leading-[1.5rem]">
           <p className="w-full h-max text-[1.07rem] text-white spacing-x-[.05rem]">
             Hi there! I’m Emmanuel Michael, a versatile full-stack web developer with expertise in enhancing and optimizing websites, I specialize in creating modern, user-friendly, and responsive web designs. I possess strong skills in developing web applications from the ground up.
           </p>
@@ -34,6 +34,9 @@ const AboutSection: React.FC<SectionType> = ({extra_styles}) => {
           alt="PROFILE IMAGE"
           className="w-[80%] max-w-[20rem] h-auto border-[.25rem] border-darkSurface/50 shadow-md shadow-darkSuface/50 object-cover rounded-[5rem]"
         />
+        <div>
+          
+        </div>
       </div>
     </section>
   )

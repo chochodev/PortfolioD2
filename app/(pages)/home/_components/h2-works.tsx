@@ -10,7 +10,7 @@ interface SectionType {
   extra_styles: string
 }
 
-const ProjectSection: React.FC<SectionType> = ({extra_styles}) => {
+const WorkSection: React.FC<SectionType> = ({extra_styles}) => {
   const projects = [
     {
       name: 'AnimeMe',
@@ -53,7 +53,7 @@ const ProjectSection: React.FC<SectionType> = ({extra_styles}) => {
   }, []);
 
   return (
-    <section className={`flex flex-col gap-y-[2.5rem] ${extra_styles}`}>
+    <section id="works" className={`flex flex-col gap-y-[2.5rem] ${extra_styles}`}>
       <div className="flex flex-col gap-y-[1rem]">
         <h2 className="w-max mx-auto text-[1.875rem] text-textDark font-bold tracking-tight ">WORKS</h2>
         <p className="w-max mx-auto text-textLight ">Some of my past works</p>

@@ -12,22 +12,22 @@ const Navbar: React.FC = () => {
   const navLinks = [
     {
       name: 'HOME',
-      url: '/home',
+      url: '#home',
       current: false
     },
     {
       name: 'WORKS',
-      url: '/',
+      url: '#works',
       current: false
     },
     {
       name: 'BLOG',
-      url: '/about',
+      url: '#about',
       current: false
     },
     {
       name: 'CONTACT',
-      url: '/contact',
+      url: '#contact',
       current: false
     },
   ]
