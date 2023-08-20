@@ -47,13 +47,13 @@ const HomeSection: React.FC<SectionType> = ({extra_styles}) => {
           alt="PROFILE IMAGE" 
           width={2500}
           height={3500}
-          className="h-[28rem] w-[calc(15rem+5vw)] object-cover object-right outline outline-[2px] outline-primary outline-offset-[4px] rounded-[10rem]"
+          className="relative z-6 h-[28rem] w-[calc(15rem+5vw)] object-cover object-right outline outline-[2px] outline-primary outline-offset-[4px] rounded-[10rem]"
         />
-        <div className="absolute bg-primary/20 z-10 top-[3rem] left-[0] w-[2rem] h-[2rem] rounded-[50%]"></div>
-        <div className="absolute bg-primary/20 z-10 bottom-[5rem] right-[3rem] w-[1.2rem] h-[3.2rem] transform rotate-[55deg]"></div>
-        <div className="absolute bg-primary/20 z-10 top-[1rem] right-[1rem] w-[2rem] h-[2rem] rounded-[50%]"></div>
-        <div className="absolute bg-primary/20 z-10 top-[8rem] left-[5rem] w-[8rem] h-[.15rem] transform rotate-[135deg]"></div>
-        <div className="absolute bg-primary/20 z-10 bottom-[1rem] left-[1rem] w-[8rem] h-[8rem] rounded-[50%]"></div>
+        <div className="absolute bg-primary/20 z-5 top-[3rem] left-0 w-[2rem] h-[2rem] rounded-[50%]"></div>
+        <div className="absolute bg-primary/20 z-5 bottom-[5rem] right-[3rem] w-[1.2rem] h-[3.2rem] transform rotate-[55deg]"></div>
+        <div className="absolute bg-primary/20 z-5 top-[1rem] right-[1rem] w-[2rem] h-[2rem] rounded-[50%]"></div>
+        <div className="absolute bg-primary/20 z-5 top-[1rem] left-[5rem] w-[4rem] h-[.15rem] transform rotate-[135deg]"></div>
+        <div className="absolute bg-primary/20 z-5 bottom-[1rem] left-[1rem] w-0 h-0 border-primary/20 border-r-[2rem] border-l-[2rem] border-b-[4rem]"></div>
       </div>
     </section>
   )
