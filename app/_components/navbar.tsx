@@ -83,7 +83,7 @@ const Navbar: React.FC = () => {
 
   useEffect(() => {
     const handleNavPosition = () => {
-      
+
     }
     const handleResize = () => {
       if (window.innerWidth < 680) {
@@ -101,7 +101,7 @@ const Navbar: React.FC = () => {
 
   // Interface
   return (
-    <header className="bg-white/20 backdrop-blur-[10px] sticky z-20 top-0 left-0 w-full h-[6rem] md:h-[calc(8rem)] flex justify-between align-center gap-x-[.5rem] px-[2rem] md:px-[3rem]">
+    <header className="bg-surface/50 backdrop-blur-[10px] sticky z-20 top-0 left-0 w-full h-[6rem] flex justify-between align-center gap-x-[.5rem] px-[1rem] md:px-[3rem]">
       {/* NAV LOGO */}
       <div className="relative z-15 flex align-center text-left h-full gap-x-[.5rem]">
         <Image src='svgs/logo-dark.svg' alt='LOGO' width='45' height='45' />
@@ -173,7 +173,7 @@ const Navbar: React.FC = () => {
             setOpenNav(true);
           }
         }}
-        className="fixed top-[1.875rem] md:top-[3rem] right-[2rem] md:right-[3rem] w-max flex flex-col flex-wrap justify-center gap-y-3 hover:bg-[#176B8710] rounded-md px-2 py-2"
+        className="fixed top-[1.5rem] right-[1rem] md:right-[3rem] w-max flex flex-col flex-wrap justify-center gap-y-3 hover:bg-[#176B8710] rounded-md px-2 py-2"
         show={!scrollDown}
         enter="transform transition-all opacity ease-in-out delay-[200ms] duration-200"
         enterFrom="translate-x-3 opacity-0"
