@@ -8,10 +8,10 @@ const HomePage: React.FC = () => {
   return (
     // Dark mode with bg-surface-gradient
     <>
-      <HomeSection extra_styles="w-full min-h-screen h-max snap-start" />
-      <WorkSection extra_styles="w-full min-h-screen h-max snap-start sm:pt-[7rem] pt-[3rem] pb-[3rem] px-[calc(4vw+1rem)]" />
-      <AboutSection extra_styles="w-full min-h-screen h-max snap-start sm:pt-[7rem] pt-[3rem] pb-[3rem] px-[calc(4vw+1rem)]" />
-      <ContactSection extra_styles="w-full min-h-screen h-max snap-start sm:pt-[7rem] pt-[3rem] pb-[3rem] px-[calc(4vw+1rem)]" />
+      <HomeSection extra_styles="w-full min-h-screen h-max snap-start scroll-snap-align-start" />
+      <WorkSection extra_styles="w-full min-h-screen h-max snap-start scroll-snap-align-start sm:pt-[7rem] pt-[3rem] pb-[3rem] px-[calc(4vw+1rem)]" />
+      <AboutSection extra_styles="w-full min-h-screen h-max snap-start scroll-snap-align-start sm:pt-[7rem] pt-[3rem] pb-[3rem] px-[calc(4vw+1rem)]" />
+      <ContactSection extra_styles="w-full min-h-screen h-max snap-start scroll-snap-align-start sm:pt-[7rem] pt-[3rem] pb-[3rem] px-[calc(4vw+1rem)]" />
     </>
   );
 }

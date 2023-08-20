@@ -53,9 +53,7 @@ const HomeSection: React.FC<SectionType> = ({extra_styles}) => {
         <div className="absolute bg-primary/20 z-10 bottom-[5rem] right-[3rem] w-[1.2rem] h-[3.2rem] transform rotate-[55deg]"></div>
         <div className="absolute bg-primary/20 z-10 top-[1rem] right-[1rem] w-[2rem] h-[2rem] rounded-[50%]"></div>
         <div className="absolute bg-primary/20 z-10 top-[8rem] left-[5rem] w-[8rem] h-[.15rem] transform rotate-[135deg]"></div>
-        <div className="absolute bg-primary/20 z-10 bottom-[1rem] left-[1rem] rounded-[50%]">
-          <RiLineFill size="15" color="#64ccc5" />
-        </div>
+        <div className="absolute bg-primary/20 z-10 bottom-[1rem] left-[1rem] w-[8rem] h-[8rem] rounded-[50%]"></div>
       </div>
     </section>
   )

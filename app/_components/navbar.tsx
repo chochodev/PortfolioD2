@@ -21,7 +21,7 @@ const Navbar: React.FC = () => {
       current: false
     },
     {
-      name: 'BLOG',
+      name: 'ABOUT',
       url: '#about',
       current: false
     },
@@ -79,12 +79,8 @@ const Navbar: React.FC = () => {
 
   // To set the break points
   const [breakpoint, setBreakpoint] = useState(false);
-  const [navPosition, setNavPosition] = useState(0);
 
   useEffect(() => {
-    const handleNavPosition = () => {
-
-    }
     const handleResize = () => {
       if (window.innerWidth < 680) {
         setScrollDown(false);
@@ -190,7 +186,7 @@ const Navbar: React.FC = () => {
       <Transition
         as="nav"
         show={openNav}
-        className="fixed top-0 right-0 bg-[conic-gradient(at_bottom_left,_var(--tw-gradient-stops))] from-purple-600 via-pink-600 to-secondary w-[100%] h-[100vh] minH-max flex md:hidden flex-col gap-y-5 px-[calc(1rem+5vw)] pt-[2rem]"
+        className="fixed top-0 right-0 bg-[conic-gradient(at_bottom_left,_var(--tw-gradient-stops))] from-darkSurface via-pink-600 to-secondary w-[100%] h-[100vh] minH-max flex md:hidden flex-col gap-y-5 px-[calc(1rem+5vw)] pt-[2rem]"
         enter="width height transition-all opacity ease-in-out duration-400"
         enterFrom="w-0 h-0 opacity-0"
         enterTo="w-full height-full opacity-1"
