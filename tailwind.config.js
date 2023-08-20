@@ -32,6 +32,9 @@ module.exports = {
       lg: "976px",
       xl: "1440px"
     },
+    animation: {
+      'mi-animate-spin-slow': 'spin 5s linear infinite',
+    },
     extend: {
       colors: {
         surface: "#F5F4FC",
@@ -47,7 +50,7 @@ module.exports = {
 
         linkColor: "#475569",
         linkHover: "#94A3B8",
-      }
+      },
     },
   },
   plugins: [],

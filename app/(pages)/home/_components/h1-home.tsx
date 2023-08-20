@@ -53,7 +53,7 @@ const HomeSection: React.FC<SectionType> = ({extra_styles}) => {
         <div className="absolute bg-primary/20 z-5 bottom-[5rem] right-[3rem] w-[1.2rem] h-[3.2rem] transform rotate-[55deg]"></div>
         <div className="absolute bg-primary/20 z-5 top-[1rem] right-[1rem] w-[2rem] h-[2rem] rounded-[50%]"></div>
         <div className="absolute bg-primary/20 z-5 top-[1rem] left-[5rem] w-[4rem] h-[.15rem] transform rotate-[135deg]"></div>
-        <div className="absolute bg-primary/20 z-5 bottom-[1rem] left-[1rem] w-0 h-0 border-primary/20 border-r-[2rem] border-l-[2rem] border-b-[4rem]"></div>
+        <div className="absolute z-5 bottom-[1rem] left-[1rem] w-0 h-0 border-r-[2rem] border-l-[2rem] border-x-transparent border-b-[4rem] broder-b-primary/20 animate-spin "></div>
       </div>
     </section>
   )

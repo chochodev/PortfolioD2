@@ -97,7 +97,7 @@ const Navbar: React.FC = () => {
 
   // Interface
   return (
-    <header className="bg-surface/50 backdrop-blur-[10px] sticky z-20 top-0 left-0 w-full h-[6rem] flex justify-between align-center gap-x-[.5rem] px-[1rem] md:px-[3rem]">
+    <header className="bg-surface/70 backdrop-blur-[20px] sticky z-20 top-0 left-0 w-full h-[6rem] flex justify-between align-center gap-x-[.5rem] px-[1rem] md:px-[3rem]">
       {/* NAV LOGO */}
       <div className="relative z-15 flex align-center text-left h-full gap-x-[.5rem]">
         <Image src='svgs/logo-dark.svg' alt='LOGO' width='45' height='45' />
@@ -146,7 +146,7 @@ const Navbar: React.FC = () => {
           {socialLinks.map(({name, icon, url}) => {
             return (
               <Link key={name} href={url} aria-label={`socials:${name} link icon`} className="group relative flex justify-center align-center text-center">
-                {React.createElement(icon, {size: 18, color: "#94A3B8"})}
+                {React.createElement(icon, {size: 18, color: "#475569"})}
                 <div className="hidden absolute h-3 w-3 bg-primary top-[calc(100%+.5rem)] rotate-45 group-hover:block z-10 transition-all duration-200 ease-in-out "></div>
                 <span 
                   className="hidden absolute top-[calc(100%+.75rem)] text-[.6rem] text-white bg-[#64CCC5] px-3 py-1 rounded-md group-hover:block z-10 transition-all duration-200 ease-in-out "
@@ -186,7 +186,7 @@ const Navbar: React.FC = () => {
       <Transition
         as="nav"
         show={openNav}
-        className="fixed top-0 right-0 bg-[conic-gradient(at_bottom_left,_var(--tw-gradient-stops))] from-darkSurface via-pink-600 to-secondary w-[100%] h-[100vh] minH-max flex md:hidden flex-col gap-y-5 px-[calc(1rem+5vw)] pt-[2rem]"
+        className="fixed top-0 right-0 bg-[conic-gradient(at_bottom_left,_var(--tw-gradient-stops))] from-darkSurface via-pink-600 to-secondary w-[100%] h-[100vh] flex md:hidden flex-col gap-y-[3rem] px-[calc(1rem+5vw)] pt-[2rem]"
         enter="width height transition-all opacity ease-in-out duration-400"
         enterFrom="w-0 h-0 opacity-0"
         enterTo="w-full height-full opacity-1"
@@ -217,7 +217,7 @@ const Navbar: React.FC = () => {
           <Transition.Child 
             as="button"
             onClick={()=>setOpenNav(false)}
-            className="bg-slate-200 px-[.5rem] py-[.5rem] mr-[-1rem] w-max hover:bg-[#ffffff10] rounded-md"
+            className="backdrop-blur-[5px] px-[.5rem] py-[.5rem] mr-[-1rem] w-max hover:bg-[#ffffff10] rounded-md"
             enter="transform transition-all opacity ease-in-out delay-[100ms] duration-200"
             enterFrom="rotate-0 translate-x-3 opacity-0"
             enterTo="rotate-45 translate-x-0 opacity-1"
@@ -260,7 +260,7 @@ const Navbar: React.FC = () => {
 
         {/* SOCIALS LINKS */}
         <Transition.Child 
-          className="fixed left-0 bottom-[2rem] w-[100vw] flex justify-evenly"
+          className="relative left-0 bottom-[4rem] w-full flex-1 flex items-end justify-evenly"
           enter={`transform transition-all opacity ease-in-out delay-[250ms] duration-350`}
           enterFrom="translate-y-3 opacity-0"
           enterTo="translate-y-0 opacity-1"
@@ -275,7 +275,7 @@ const Navbar: React.FC = () => {
                 onClick={()=>setOpenNav(!openNav)}
                 href={url}
                 aria-label={`socials:${name} link icon`} 
-                className="group relative flex justify-center align-center text-center"
+                className="group relative h-max flex justify-center align-center text-center"
               >
                 {React.createElement(icon, {size: 25, color: '#94A3B8'})}
                 <div className="hidden absolute h-3 w-3 bg-white bottom-[calc(100%+.5rem)] rotate-45 group-hover:block z-10 transition-all duration-200 ease-in-out "></div>
