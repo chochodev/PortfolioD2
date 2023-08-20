@@ -36,17 +36,17 @@ const Navbar: React.FC = () => {
     {
       name: 'Facebook',
       icon: RiFacebookFill,
-      link: 'https://web.facebook.com/profile.php?id=100082896713464',
+      url: 'https://web.facebook.com/profile.php?id=100082896713464',
     },
     {
       name: 'WhatsApp',
       icon: RiWhatsappFill,
-      link: 'https://wa.me/23439108667',
+      url: 'https://wa.me/23439108667',
     },
     {
       name: 'LinkdedIn',
       icon: RiLinkedinFill,
-      link: 'https://www.linkedin.com/in/emmanuel-michael-728678217/',
+      url: 'https://www.linkedin.com/in/emmanuel-michael-728678217/',
     }
   ]
 
@@ -79,8 +79,12 @@ const Navbar: React.FC = () => {
 
   // To set the break points
   const [breakpoint, setBreakpoint] = useState(false);
+  const [navPosition, setNavPosition] = useState(0);
 
   useEffect(() => {
+    const handleNavPosition = () => {
+      
+    }
     const handleResize = () => {
       if (window.innerWidth < 680) {
         setScrollDown(false);
@@ -92,12 +96,12 @@ const Navbar: React.FC = () => {
     window.addEventListener('resize', handleResize);
     return () => {
       window.removeEventListener('resize', handleResize);
-    }
-  }, [])
+    };
+  }, []);
 
   // Interface
   return (
-    <header className="bg-transparent fixed z-20 top-0 left-0 w-full h-[6rem] md:h-[calc(2vw+8rem)] flex justify-between align-center gap-x-[.5rem] px-[2rem] md:px-[5rem]">
+    <header className="bg-white/20 backdrop-blur-[10px] sticky z-20 top-0 left-0 w-full h-[6rem] md:h-[calc(8rem)] flex justify-between align-center gap-x-[.5rem] px-[2rem] md:px-[3rem]">
       {/* NAV LOGO */}
       <div className="relative z-15 flex align-center text-left h-full gap-x-[.5rem]">
         <Image src='svgs/logo-dark.svg' alt='LOGO' width='45' height='45' />
@@ -143,9 +147,9 @@ const Navbar: React.FC = () => {
           leaveFrom="opacity-1"
           leaveTo="opacity-0"
         >
-          {socialLinks.map(({name, icon, link}) => {
+          {socialLinks.map(({name, icon, url}) => {
             return (
-              <Link key={name} href={link} aria-label={`socials:${name} link icon`} className="group relative flex justify-center align-center text-center">
+              <Link key={name} href={url} aria-label={`socials:${name} link icon`} className="group relative flex justify-center align-center text-center">
                 {React.createElement(icon, {size: 18, color: "#94A3B8"})}
                 <div className="hidden absolute h-3 w-3 bg-primary top-[calc(100%+.5rem)] rotate-45 group-hover:block z-10 transition-all duration-200 ease-in-out "></div>
                 <span 
@@ -169,9 +173,9 @@ const Navbar: React.FC = () => {
             setOpenNav(true);
           }
         }}
-        className="fixed top-[2rem] md:top-[calc(2vw+2.5rem)] right-[2rem] md:right-[5rem] w-max flex flex-col flex-wrap justify-center gap-y-3 hover:bg-[#176B8710] rounded-md px-2 py-2"
+        className="fixed top-[1.875rem] md:top-[3rem] right-[2rem] md:right-[3rem] w-max flex flex-col flex-wrap justify-center gap-y-3 hover:bg-[#176B8710] rounded-md px-2 py-2"
         show={!scrollDown}
-        enter="transform transition-all opacity ease-in-out duration-200"
+        enter="transform transition-all opacity ease-in-out delay-[200ms] duration-200"
         enterFrom="translate-x-3 opacity-0"
         enterTo="translate-x-0 opacity-1"
         leave="transform transition-all opacity ease-in-out delay-[50ms] duration-75"
@@ -248,6 +252,7 @@ const Navbar: React.FC = () => {
             >
               <Link 
                 href={url}
+                onClick={()=>setOpenNav(!openNav)}
                 className="relative w-full py-[.875rem] px-[calc(1rem+2vw)] flex justify-end text-center align-center text-[1rem] font-open font-[600] text-white rounded-md hover:bg-[#FFFFFF10] hover:pr-[calc(2rem+2vw)] hover:text-primary transition-all duration-200 ease-in-out "
               >
                 {name}
@@ -267,11 +272,17 @@ const Navbar: React.FC = () => {
           leaveFrom="translate-y-0 opacity-1"
           leaveTo="translate-y-3 opacity-0"
         >
-          {socialLinks.map(({name, icon}) => {
+          {socialLinks.map(({name, icon, url}) => {
             return (
-              <Link key={name} href='#' aria-label={`socials:${name} link icon`} className="group relative flex justify-center align-center text-center">
+              <Link 
+                key={name} 
+                onClick={()=>setOpenNav(!openNav)}
+                href={url}
+                aria-label={`socials:${name} link icon`} 
+                className="group relative flex justify-center align-center text-center"
+              >
                 {React.createElement(icon, {size: 25, color: '#94A3B8'})}
-                <div className="hidden absolute h-3 w-3 bg-primary bottom-[calc(100%+.5rem)] rotate-45 group-hover:block z-10 transition-all duration-200 ease-in-out "></div>
+                <div className="hidden absolute h-3 w-3 bg-white bottom-[calc(100%+.5rem)] rotate-45 group-hover:block z-10 transition-all duration-200 ease-in-out "></div>
                 <span 
                   className="hidden absolute bottom-[calc(100%+.75rem)] text-[.6rem] text-white bg-primary px-3 py-1 rounded-md group-hover:block z-10 transition-all duration-200 ease-in-out "
                 >

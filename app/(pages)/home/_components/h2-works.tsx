@@ -100,4 +100,4 @@ const WorkSection: React.FC<SectionType> = ({extra_styles}) => {
   )
 }
 
-export default ProjectSection;
+export default WorkSection;
