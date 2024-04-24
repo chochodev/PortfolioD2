@@ -19,10 +19,10 @@ const WorkSection: React.FC<SectionType> = ({extra_styles}) => {
       desc: 'This is a project for anime lovers. It is for reviewing, discussing and exploring animes.',
     },
     {
-      name: 'DesignHive',
-      url: 'https://github.com/chochoprogrammer/Course-App',
-      image: 'project01.png',
-      desc: 'This is a course app project of only tech related courses with complex fuctionalities.',
+      name: 'ErenFresh',
+      url: 'https://github.com/chochoprogrammer/Grocery-App',
+      image: 'eren-fresh.png',
+      desc: 'This is a grocery e-commerce app project of a local stall with all the basic fuctionalities.',
     },
     {
       name: 'MallGo',

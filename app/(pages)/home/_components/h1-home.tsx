@@ -70,9 +70,9 @@ const HomeSection: React.FC<SectionType> = ({extra_styles}) => {
               {text: 'Next JS', icon:SiNextdotjs},
               {text: 'SvelteKit', icon:SiSvelte}
             ].map(({icon, text}, index) => (
-              <div key={index} className='group cursor-pointer flex gap-[0.5rem] items-center '>
+              <div key={index} className='group cursor-pointer flex gap-[0.5rem] items-center transform translate-x-0 hover:translate-x-[1rem] ease-250 '>
                 {React.createElement(icon, {size: 22, color: "#64CCC5"})}
-                <p className='text-primary text-[1.15rem] font-[600] group-hover:text-teal-700 ease-250 '>
+                <p className='text-primary text-[1.15rem] font-[600] group-hover:text-teal-300 ease-250 '>
                   {text}
                 </p>
               </div>
@@ -81,7 +81,7 @@ const HomeSection: React.FC<SectionType> = ({extra_styles}) => {
         </div>
 
         {/* :::::::::::::::::::::::::::::::::::::::: ICONS */}
-        <div className="absolute bg-primary/20 z-5 top-[3rem] left-0 w-[2rem] h-[2rem] rounded-[50%]"></div>
+        <div className="absolute bg-primary/20 z-5 top-[3rem] left-0 w-[4rem] h-[4rem] rounded-[50%]"></div>
         <div className="absolute bg-primary/20 z-5 bottom-[5rem] right-[3rem] w-[1.2rem] h-[3.2rem] transform rotate-[55deg]"></div>
         <div className="absolute bg-primary/20 z-5 top-[1rem] right-[1rem] w-[2rem] h-[2rem] rounded-[50%]"></div>
         <div className="absolute bg-primary/20 z-5 top-[1rem] left-[5rem] w-[4rem] h-[.15rem] transform rotate-[135deg]"></div>

@@ -97,7 +97,7 @@ const Navbar: React.FC = () => {
 
   // Interface
   return (
-    <header className="bg-teal-800/70 backdrop-blur-[20px] sticky z-20 top-0 left-0 w-full h-[6rem] flex justify-between align-center gap-x-[.5rem] px-[1rem] md:px-[3rem] shadow-[0_2px_15px_2px_rgba(17,94,89,0.15)] ">
+    <header className="bg-teal-800/90 backdrop-blur-[20px] sticky z-20 top-0 left-0 w-full h-[6rem] flex justify-between align-center gap-x-[.5rem] px-[1rem] md:px-[3rem] shadow-[0_2px_15px_2px_rgba(0,0,0,0.25)] ">
       {/* NAV LOGO */}
       <div className="relative z-15 flex align-center text-left h-full gap-x-[.5rem]">
         <Image src='svgs/logo-light.svg' alt='LOGO' width='45' height='45' />
