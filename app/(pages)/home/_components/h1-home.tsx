@@ -2,7 +2,8 @@
 
 import Image from 'next/image';
 import React from 'react';
-import { RiAddCircleFill, RiLineFill } from 'react-icons/ri';
+import { RiAddCircleFill, RiHtml5Fill, RiJavascriptFill } from 'react-icons/ri';
+import { SiCss3, SiTailwindcss, SiSass, SiChakraui, SiReact, SiNextdotjs, SiSvelte } from "react-icons/si";
 
 interface SectionType {
   extra_styles: string
@@ -11,46 +12,73 @@ interface SectionType {
 const HomeSection: React.FC<SectionType> = ({extra_styles}) => {
   return (
     // Add those subtle shapes and all to the background
-    <section id="home" className={`flex justify-between items-start mdx:flex-row flex-col gap-y-[1rem] bg-darkSurface ${extra_styles}`}>
-      <div className="relative max-w-[40rem] md:max-w-[35rem] h-full flex flex-col gap-y-[1.5rem] justify-center px-[calc(4vw+1rem)]">
-        <h2 className="max-w-[30rem] text-textDark text-[2.5rem] md:text-[3rem] text-bold lg:text-[3.5rem] font-bold">
+    <section id="home" className={`flex justify-between items-start mdx:flex-row flex-col gap-y-[1rem] h-max bg-white ${extra_styles}`}>
+      
+      {/* :::::::::::::::::::::::::::::::::::: TEXT CONTENT */}
+      <div className="relative max-w-[40rem] md:max-w-[45rem] h-max flex flex-col gap-y-[2rem] justify-center md:py-[3rem] px-[calc(4vw+1rem)]">
+        <h2 className="text-teal-900 text-[2.875rem] md:text-[4rem] text-bold lg:text-[4.5rem] font-bold">
           I Build, Develop & Design Web Apps.
         </h2>
         <div className="flex flex-col">
-          <span className="text-[.875rem] font-[300]">Hi, I&apos;m</span>
-          <p className="text-[1rem] text-textDark font-[600]">EMMANUEL MICHAEL.</p>
+          <span className="text-[1.25rem] text-slate-500 font-[300]">Hi, I&apos;m</span>
+          <p className="text-[1.875rem] text-slate-700 font-[600]">EMMANUEL MICHAEL.</p>
         </div>
-        <div className="flex flex-col gap-y-2">
-            <p className="text-[.875rem]">
+        <div className="flex flex-col gap-y-2 text-slate-500 ">
+            <p className="text-[1rem] font-thin">
               I excel in upgrading and optimizing websites, creating modern and user-friendly designs.
             </p>
-            <p className="text-[.875rem]">
+            <p className="text-[1rem] font-thin">
               With expertise in frontend and backend development, I build scalable server systems and develop web applications from scratch. 
             </p>
-            <p className="text-[.875rem]">
+            <p className="text-[1rem] font-thin">
               Let me bring your vision to life!!
             </p>
         </div>
         <button
-          className="bg-darkSurface w-max h-max flex gap-x-1 items-center justify-center px-[1rem] py-[.5rem] text-white rounded-[2rem] shadow-sm hover:shadow-darkSurface/50 hover:shadow-md focus:outline-1 focus:outline-darkSurface/50 transition-all duration-250 ease-in-out"
+          className="bg-teal-800 w-max h-max flex gap-x-1 items-center justify-center px-[1.25rem] py-[.75rem] text-white rounded-[2rem] shadow-sm hover:shadow-teal-800/50 hover:shadow-md focus:outline-1 focus:outline-teal-800/50 transition-all duration-250 ease-in-out"
         >
           <RiAddCircleFill size="25" color="white" />
-          <p className="h-max text-white text-[.875rem] tracking-[.15rem]">Hire me</p>
+          <p className="h-max text-white text-[1.25rem] tracking-[.15rem]">Hire me</p>
         </button>
 
         {/* BACKGROUND ADDED ICONS */}
 
       </div>
+
+      {/* ::::::::::::::::::::::::::::::::::::::: PROFILE IMAGE */}
       <div 
-        className="relative bg-darkSurface z-1 h-full mdx:w-max w-full flex justify-center items-center py-[calc(3vw+3rem)] mdx:px-[calc(3vw+2rem)] mi_id-lg:px-[calc(2vw+1.5rem)] border-l-2 border-primary"
+        className="relative bg-teal-800 z-1 h-[45rem] w-full mdx:w-[40%] flex justify-end items-center py-[calc(3vw+3rem)] border-l-[2px] border-primary"
       >
         <Image 
-          src="/images/profile01.jpg" 
+          src="/images/img01.jpeg" 
           alt="PROFILE IMAGE" 
           width={2500}
           height={4000}
-          className="relative z-6 h-[28rem] w-[calc(15rem+5vw)] object-cover object-right outline outline-[2px] outline-primary outline-offset-[4px] rounded-[10rem]"
+          className="absolute left-[-40%] z-6 h-[30rem] w-[30rem] min-w-[30rem] -[calc(15rem+5vw)] object-cover object-right outline outline-[3px] outline-primary outline-offset-[4px] rounded-[8rem]"
         />
+        <div className="flex flex-col gap-[2rem] h-full px-[2rem] ">
+          <span className='text-teal-400 text-[2rem] font-[600] '>{'<ChochoDev/>'}</span>
+          <div className='flex flex-col gap-[2rem]'>
+            {[
+              {text: 'HTML5', icon:RiHtml5Fill},
+              {text: 'CSS3', icon:SiCss3},
+              {text: 'JavaScript', icon:RiJavascriptFill},
+              {text: 'SASS', icon:SiSass},
+              {text: 'ChakraUI', icon:SiChakraui},
+              {text: 'TailwindCSS', icon:SiTailwindcss},
+              {text: 'React JS', icon:SiReact},
+              {text: 'Next JS', icon:SiNextdotjs},
+              {text: 'SvelteKit', icon:SiSvelte}
+            ].map(({icon, text}, index) => (
+              <div key={index} className='group cursor-pointer flex gap-[0.5rem] items-center '>
+                {React.createElement(icon, {size: 22, color: "#64CCC5"})}
+                <p className='text-primary text-[1.15rem] font-[600] group-hover:text-teal-700 ease-250 '>
+                  {text}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
 
         {/* :::::::::::::::::::::::::::::::::::::::: ICONS */}
         <div className="absolute bg-primary/20 z-5 top-[3rem] left-0 w-[2rem] h-[2rem] rounded-[50%]"></div>

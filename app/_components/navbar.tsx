@@ -97,12 +97,12 @@ const Navbar: React.FC = () => {
 
   // Interface
   return (
-    <header className="bg-surface/70 backdrop-blur-[20px] sticky z-20 top-0 left-0 w-full h-[6rem] flex justify-between align-center gap-x-[.5rem] px-[1rem] md:px-[3rem]">
+    <header className="bg-teal-800/70 backdrop-blur-[20px] sticky z-20 top-0 left-0 w-full h-[6rem] flex justify-between align-center gap-x-[.5rem] px-[1rem] md:px-[3rem] shadow-[0_2px_15px_2px_rgba(17,94,89,0.15)] ">
       {/* NAV LOGO */}
       <div className="relative z-15 flex align-center text-left h-full gap-x-[.5rem]">
-        <Image src='svgs/logo-dark.svg' alt='LOGO' width='45' height='45' />
+        <Image src='svgs/logo-light.svg' alt='LOGO' width='45' height='45' />
         <h2
-          className="w-min h-max my-auto text-[.875rem] text-textDark font-lato font-[500] tracking-[.2rem]"
+          className="w-min h-max my-auto text-[.875rem] text-teal-200 font-lato font-[500] tracking-[.2rem]"
         >
           EMMANUEL MICHAEL
         </h2>
@@ -126,7 +126,7 @@ const Navbar: React.FC = () => {
         {navLinks.map(({name, url, current}) => {
           return (
           <li key={name} className="w-max">
-            <Link href={url} className="relative text-[.875rem] font-open font-[600] text-secondary hover:text-primary transition-all duration-200 ease-in-out ">{name}</Link>
+            <Link href={url} className="relative text-[.875rem] font-open font-[600] text-primary hover:text-white transition-all duration-200 ease-in-out ">{name}</Link>
           </li>
           )
         })}
@@ -146,7 +146,8 @@ const Navbar: React.FC = () => {
           {socialLinks.map(({name, icon, url}) => {
             return (
               <Link key={name} href={url} aria-label={`socials:${name} link icon`} className="group relative flex justify-center align-center text-center">
-                {React.createElement(icon, {size: 18, color: "#475569"})}
+                {/* ::::::::::::::::::::::::::: ICON */}
+                {React.createElement(icon, {size: 18, color: "#cccccc"})}
                 <div className="hidden absolute h-3 w-3 bg-primary top-[calc(100%+.5rem)] rotate-45 group-hover:block z-10 transition-all duration-200 ease-in-out "></div>
                 <span 
                   className="hidden absolute top-[calc(100%+.75rem)] text-[.6rem] text-white bg-[#64CCC5] px-3 py-1 rounded-md group-hover:block z-10 transition-all duration-200 ease-in-out "
@@ -178,9 +179,8 @@ const Navbar: React.FC = () => {
         leaveFrom="translate-x-0 opacity-1"
         leaveTo="translate-x-3 opacity-0"
       >
-        <SiCoderwall size="30" color="#176B87" className="hover:text-primary" />
+        <SiCoderwall size="30" className="text-primary hover:text-primary" />
       </Transition>
-
 
       {/* NAVBAR FOR SMALL SCREENS */}
       <Transition
