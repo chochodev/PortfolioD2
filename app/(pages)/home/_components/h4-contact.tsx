@@ -8,7 +8,7 @@ interface SectionType {
 
 const ContactSection: React.FC<SectionType> = ({extra_styles}) => {
   return (
-    <section id="contact" className={`md:px-[5rem] px-[1rem+5vw] ${extra_styles}`}>
+    <section id="contact" className={`md:px-[5rem] px-[1rem+5vw] bg-white ${extra_styles}`}>
       <div className="w-full flex flex-col items-center text-center gap-[1rem] my-[3rem]">
         <h2 className="text-[1.875rem] text-textDark font-bold">CONTACT</h2>
         <p className="text-textLight">Get in touch with me</p>

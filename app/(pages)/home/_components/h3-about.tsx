@@ -32,7 +32,7 @@ const AboutSection: React.FC<SectionType> = ({extra_styles}) => {
           width={1500}
           height={1500}
           alt="PROFILE IMAGE"
-          className="w-[80%] max-w-[25rem] h-auto border-[.25rem] border-darkSurface/50 shadow-md shadow-darkSuface/50 object-cover rounded-[5rem]"
+          className="w-full max-w-[25rem] h-auto border-[.25rem] border-darkSurface/50 shadow-md shadow-darkSuface/50 object-cover rounded-[5rem]"
         />
         <div>
           

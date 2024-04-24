@@ -58,7 +58,7 @@ const WorkSection: React.FC<SectionType> = ({extra_styles}) => {
         <h2 className="w-max mx-auto text-[1.875rem] text-textDark font-bold tracking-tight ">WORKS</h2>
         <p className="w-max mx-auto text-textLight ">Some of my past works</p>
       </div>
-      <ul className="w-full min-h-[100vh] flex flex-wrap justify-evenly gap-[calc(3vw+.5rem)] py-[1rem+5vw]">
+      <ul className="w-full min-h-[100vh] flex flex-wrap justify-evenly gap-y-[3rem] gap-[calc(3vw+.5rem)] py-[1rem+5vw]">
         {/* PROJECTS */}
         {projects.map((project, index) => {
           return (
