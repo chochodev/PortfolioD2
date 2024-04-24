@@ -7,7 +7,7 @@ interface SectionType {
 
 const AboutSection: React.FC<SectionType> = ({extra_styles}) => {
   return (
-    <section id="about" className={`bg-darkSurface ${extra_styles}`}>
+    <section id="about" className={`bg-teal-900 ${extra_styles}`}>
       <div className="w-full flex flex-col items-center text-center gap-[1rem] mx-auto mb-[3rem]">
         <h2 className="text-[1.875rem] text-white font-bold">ABOUT</h2>
         <p className="text-slate-200">A few words about me</p>
@@ -28,11 +28,11 @@ const AboutSection: React.FC<SectionType> = ({extra_styles}) => {
           </p>
         </div>
         <Image 
-          src="/images/profile02.jpg"
+          src="/images/img01.jpeg"
           width={1500}
           height={1500}
           alt="PROFILE IMAGE"
-          className="w-[80%] max-w-[20rem] h-auto border-[.25rem] border-darkSurface/50 shadow-md shadow-darkSuface/50 object-cover rounded-[5rem]"
+          className="w-[80%] max-w-[25rem] h-auto border-[.25rem] border-darkSurface/50 shadow-md shadow-darkSuface/50 object-cover rounded-[5rem]"
         />
         <div>
           

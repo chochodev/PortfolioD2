@@ -27,7 +27,7 @@ const WorkSection: React.FC<SectionType> = ({extra_styles}) => {
     {
       name: 'MallGo',
       url: 'https://github.com/chochoprogrammer/Ecommerce-01-Frontend',
-      image: 'project01.png',
+      image: 'mallgo.png',
       desc: 'An E-commerce website with common and special function that make this unique user friendly.',
     },
   ]

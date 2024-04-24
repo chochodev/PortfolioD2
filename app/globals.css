@@ -54,4 +54,8 @@
     .ch-input {
         @apply h-[1.875rem] placeholder:text-[#CCCCCC] text-textDark outline-none border-[1px] border-slate-200 rounded-md hover:shadow-sm hover:shadow-slate-500/20 focus:border-[1px] focus:border-slate-400 resize-none transition-all duration-200 ease-in-out
     }
+
+    .ease-250 {
+        @apply transition-all ease-in-out duration-[250ms]
+    }
 }
