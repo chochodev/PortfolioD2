@@ -11,7 +11,7 @@ interface SectionType {
 const HomeSection: React.FC<SectionType> = ({extra_styles}) => {
   return (
     // Add those subtle shapes and all to the background
-    <section id="home" className={`flex justify-between items-start mi_md:flex-row flex-col gap-y-[1rem] ${extra_styles}`}>
+    <section id="home" className={`flex justify-between items-start mdx:flex-row flex-col gap-y-[1rem] bg-darkSurface ${extra_styles}`}>
       <div className="relative max-w-[40rem] md:max-w-[35rem] h-full flex flex-col gap-y-[1.5rem] justify-center px-[calc(4vw+1rem)]">
         <h2 className="max-w-[30rem] text-textDark text-[2.5rem] md:text-[3rem] text-bold lg:text-[3.5rem] font-bold">
           I Build, Develop & Design Web Apps.
@@ -42,7 +42,7 @@ const HomeSection: React.FC<SectionType> = ({extra_styles}) => {
 
       </div>
       <div 
-        className="relative bg-darkSurface z-1 h-full mi_md:w-max w-full flex justify-center items-center py-[calc(3vw+3rem)] mi_md:px-[calc(3vw+2rem)] mi_id-lg:px-[calc(2vw+1.5rem)] border-l-2 border-primary"
+        className="relative bg-darkSurface z-1 h-full mdx:w-max w-full flex justify-center items-center py-[calc(3vw+3rem)] mdx:px-[calc(3vw+2rem)] mi_id-lg:px-[calc(2vw+1.5rem)] border-l-2 border-primary"
       >
         <Image 
           src="/images/profile01.jpg" 
