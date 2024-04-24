@@ -12,7 +12,7 @@ const HomeSection: React.FC<SectionType> = ({extra_styles}) => {
   return (
     // Add those subtle shapes and all to the background
     <section id="home" className={`flex justify-between items-start mi_md:flex-row flex-col gap-y-[1rem] ${extra_styles}`}>
-      <div className="relative max-w-[35rem] h-full flex flex-col gap-y-[1.5rem] justify-center px-[calc(4vw+1rem)]">
+      <div className="relative max-w-[40rem] md:max-w-[35rem] h-full flex flex-col gap-y-[1.5rem] justify-center px-[calc(4vw+1rem)]">
         <h2 className="max-w-[30rem] text-textDark text-[2.5rem] md:text-[3rem] text-bold lg:text-[3.5rem] font-bold">
           I Build, Develop & Design Web Apps.
         </h2>
@@ -48,9 +48,11 @@ const HomeSection: React.FC<SectionType> = ({extra_styles}) => {
           src="/images/profile01.jpg" 
           alt="PROFILE IMAGE" 
           width={2500}
-          height={3500}
+          height={4000}
           className="relative z-6 h-[28rem] w-[calc(15rem+5vw)] object-cover object-right outline outline-[2px] outline-primary outline-offset-[4px] rounded-[10rem]"
         />
+
+        {/* :::::::::::::::::::::::::::::::::::::::: ICONS */}
         <div className="absolute bg-primary/20 z-5 top-[3rem] left-0 w-[2rem] h-[2rem] rounded-[50%]"></div>
         <div className="absolute bg-primary/20 z-5 bottom-[5rem] right-[3rem] w-[1.2rem] h-[3.2rem] transform rotate-[55deg]"></div>
         <div className="absolute bg-primary/20 z-5 top-[1rem] right-[1rem] w-[2rem] h-[2rem] rounded-[50%]"></div>
