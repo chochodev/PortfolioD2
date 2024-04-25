@@ -13,10 +13,10 @@ interface SectionType {
 const HomeSection: React.FC<SectionType> = ({extra_styles}) => {
   return (
     // Add those subtle shapes and all to the background
-    <section id="home" className={`flex justify-between items-start mdx:flex-row flex-col gap-y-[1rem] h-max bg-white ${extra_styles}`}>
+    <section id="home" className={`flex justify-between items-start xl:flex-row flex-col gap-y-[1rem] h-max bg-white ${extra_styles}`}>
       
       {/* :::::::::::::::::::::::::::::::::::: TEXT CONTENT */}
-      <div className="relative max-w-[35rem] xl:max-w-[40rem] h-max flex flex-col gap-y-[2rem] justify-center py-[8rem] lgx:py-[3rem] px-[calc(4vw+1rem)]">
+      <div className="relative max-w-[35rem] lg:max-w-[40rem] xl:max-w-[45rem] h-max flex flex-col gap-y-[2rem] justify-center py-[8rem] lgx:py-[3rem] px-[calc(4vw+1rem)]">
         <h2 className="text-teal-900 text-[2.875rem] md:text-[3.5rem] text-bold lg:text-[4rem] font-bold">
           I Build, Develop & Design Web Apps.
         </h2>
@@ -43,25 +43,24 @@ const HomeSection: React.FC<SectionType> = ({extra_styles}) => {
         />
 
         {/* BACKGROUND ADDED ICONS */}
-
       </div>
 
       {/* ::::::::::::::::::::::::::::::::::::::: PROFILE IMAGE */}
       <div 
-        className="relative bg-teal-800 z-1 h-[45rem] w-full mdx:w-[40%] flex justify-end items-center border-l-[2px] border-primary"
+        className="relative bg-teal-800 z-1 h-[45rem] w-full xl:w-[40%] flex justify-center items-center border-l-[2px] border-primary"
       >
         <Image 
           src="/images/img01.jpeg" 
           alt="PROFILE IMAGE" 
           width={2500}
           height={4000}
-          className="relative z-[10] max-w-[90%] w-[22rem] h-[18rem] lg:h-[22rem] min-w-[22rem] xl:h-[30rem] xl:w-[30rem] xl:min-w-[30rem] object-cover object-right outline outline-[3px] outline-primary outline-offset-[4px] rounded-[4rem] xl:rounded-[6rem] ease-250"
+          className="absolure top-[-100%] mdx:relative max-[720px]:mt-[-100%] xl:ml-[-100%] z-[10] max-w-[90%] w-[22rem] h-[22rem] lg:h-[22rem] min-w-[22rem] xl:h-[30rem] xl:w-[30rem] xl:min-w-[30rem] object-cover object-right outline outline-[3px] outline-primary outline-offset-[4px] rounded-[4rem] xl:rounded-[6rem] ease-250"
         />
         <div 
-          className="absolute top-0 right-[2rem] z-[6] flex flex-col h-full justify-center items-end gap-[2rem] pr-[2rem] "
+          className="xl:absolute top-0 right-[2rem] z-[6] flex flex-col h-full justify-center mdx:items-end gap-[2rem] pr-[2rem] "
         >
           <span className='text-teal-400 text-[1.5rem] xl:text-[2rem] font-[600] '>{'<ChochoDev/>'}</span>
-          <div className='flex flex-col justify-between items-end py-[0.5rem]'>
+          <div className='flex flex-col justify-between items-end'>
             {[
               {text: 'HTML5', icon:RiHtml5Fill},
               {text: 'CSS3', icon:SiCss3},
@@ -73,11 +72,11 @@ const HomeSection: React.FC<SectionType> = ({extra_styles}) => {
               {text: 'Next JS', icon:SiNextdotjs},
               {text: 'SvelteKit', icon:SiSvelte}
             ].map(({icon, text}, index) => (
-              <div key={index} className='group cursor-pointer flex gap-[0.5rem] items-center h-[2rem] transform translate-x-0 hover:translate-x-[1rem] ease-250 '>
-                <p className='text-primary text-[0.875rem] xl:text-[1.15rem] font-[600] group-hover:text-teal-300 ease-250 '>
+              <div key={index} className='group cursor-pointer flex gap-[0.5rem] items-center h-[2.875rem] transform translate-x-0 hover:translate-x-[1rem] ease-250 '>
+                <p className='text-primary text-[0.875rem] xl:text-[1.15rem] group-hover:text-teal-300 ease-250 '>
                   {text}
                 </p>
-                {React.createElement(icon, {className: "text-[1.375rem] text-teal-800 "})}
+                {React.createElement(icon, {className: "text-[1.375rem] text-teal-400 "})}
               </div>
             ))}
           </div>
