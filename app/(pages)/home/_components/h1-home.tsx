@@ -4,6 +4,7 @@ import Image from 'next/image';
 import React from 'react';
 import { RiAddCircleFill, RiHtml5Fill, RiJavascriptFill } from 'react-icons/ri';
 import { SiCss3, SiTailwindcss, SiSass, SiChakraui, SiReact, SiNextdotjs, SiSvelte } from "react-icons/si";
+import Buttons from '@/components/buttons';
 
 interface SectionType {
   extra_styles: string
@@ -34,12 +35,12 @@ const HomeSection: React.FC<SectionType> = ({extra_styles}) => {
               Let me bring your vision to life!!
             </p>
         </div>
-        <button
-          className="bg-teal-800 w-max h-max flex gap-x-1 items-center justify-center px-[1.25rem] py-[.75rem] text-white rounded-[2rem] shadow-sm hover:shadow-teal-800/50 hover:shadow-md focus:outline-1 focus:outline-teal-800/50 transition-all duration-250 ease-in-out"
-        >
-          <RiAddCircleFill size="25" color="white" />
-          <p className="h-max text-white text-[1.25rem] tracking-[.15rem]">Hire me</p>
-        </button>
+
+        {/* :::::::::::::::::::::::::::::::::::: HIRE MR BUTTON */}
+        <Buttons.RoundButton
+          text='Hire me'
+          icon={RiAddCircleFill}
+        />
 
         {/* BACKGROUND ADDED ICONS */}
 
