@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
-import { RiAtLine, RiMailLine, RiPhoneLine, RiTwitterLine, RiUser6Line } from 'react-icons/ri';
+import { RiAtLine, RiMailLine, RiPhoneLine, RiTwitterLine, RiUser6Line, RiAddCircleFill } from 'react-icons/ri';
 
 interface SectionType {
   extra_styles: string
@@ -53,7 +53,7 @@ const ContactSection: React.FC<SectionType> = ({extra_styles}) => {
         </div>
 
         {/* CONTACT FORM */}
-        <form action="#" className="w-full flex-1 flex flex-col md:flex-row gap-x-[.5rem] gap-y-[1rem]">
+        <form action="#" className="w-full flex-1 flex flex-col gap-x-[.5rem] gap-y-[1rem]">
           {/* <h2 className="text-textDark text-[1.05rem] font-bold tracking-[.25rem]mb-[.5rem] border-b-[1px] border-slate-400">Message Me...</h2> */}
           <div className=" w-full md:w-[40vw] lg:w-[30vw] flex flex-col gap-[.5rem] ">
             <div className="relative w-full flex items-center">
@@ -64,16 +64,17 @@ const ContactSection: React.FC<SectionType> = ({extra_styles}) => {
               <RiAtLine size="25" color="#7A7A7C" className="absolute left-[.5rem]" />
               <input type="email" name="email" placeholder="Email Address" className="ch-input h-[2.5rem] w-full pl-[2.25rem]" />
             </div>
-          </div>
-          <div className="flex-1 flex flex-col gap-y-[.5rem] items-end">
+          {/* </div>
+          <div className="flex-1 flex flex-col gap-y-[.5rem] items-end"> */}
             <div className="relative w-full">
               <RiMailLine size="25" color="#7A7A7C" className="absolute top-[.25rem] left-[.5rem]" />
               <textarea name="message" placeholder="Message..." className="ch-input h-[5.5rem] w-full pl-[2.25rem] placeholder:py-[.5rem]"></textarea>
             </div>
             <button 
-              className="w-[8rem] py-[.875rem] bg-gradient-to-tr from-[#0060a5] to-darkSurface to-{20%} flex text-center justify-center text-white font-bold text-[.875rem] rounded-md"
+              className="bg-teal-800 w-max h-max flex gap-x-1 items-center justify-center px-[1.25rem] py-[.75rem] text-white rounded-[2rem] shadow-sm hover:shadow-teal-800/50 hover:shadow-md focus:outline-1 focus:outline-teal-800/50 transition-all duration-250 ease-in-out"
             >
-              SUBMIT
+              <RiAddCircleFill size="25" color="white" />
+              <p className="h-max text-white text-[1.25rem] tracking-[.15rem]">SUBMIT</p>  
             </button>
           </div>
         </form>

@@ -30,6 +30,7 @@ module.exports = {
       md: "680px",
       mdx: "720px",
       lg: "976px",
+      lgx: "1024px",
       xl: "1440px"
     },
     animation: {

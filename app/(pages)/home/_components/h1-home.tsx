@@ -15,7 +15,7 @@ const HomeSection: React.FC<SectionType> = ({extra_styles}) => {
     <section id="home" className={`flex justify-between items-start mdx:flex-row flex-col gap-y-[1rem] h-max bg-white ${extra_styles}`}>
       
       {/* :::::::::::::::::::::::::::::::::::: TEXT CONTENT */}
-      <div className="relative max-w-[35rem] md:max-w-[40rem] h-max flex flex-col gap-y-[2rem] justify-center py-[5rem] md:py-[3rem] px-[calc(4vw+1rem)]">
+      <div className="relative max-w-[35rem] md:max-w-[40rem] h-max flex flex-col gap-y-[2rem] justify-center min-[1024px]:py-[8rem] md:py-[3rem] px-[calc(4vw+1rem)]">
         <h2 className="text-teal-900 text-[2.875rem] md:text-[3.5rem] text-bold lg:text-[4rem] font-bold">
           I Build, Develop & Design Web Apps.
         </h2>
@@ -47,14 +47,14 @@ const HomeSection: React.FC<SectionType> = ({extra_styles}) => {
 
       {/* ::::::::::::::::::::::::::::::::::::::: PROFILE IMAGE */}
       <div 
-        className="relative bg-teal-800 z-1 h-[45rem] w-full mdx:w-[40%] flex lg:justify-end items-center py-[calc(3vw+3rem)] border-l-[2px] border-primary"
+        className="relative bg-teal-800 z-1 h-[45rem] w-full mdx:w-[40%] flex justify-center lg:justify-end items-center min-[1024px]:pt-[10rem] py-[calc(3vw+3rem)] border-l-[2px] border-primary"
       >
         <Image 
           src="/images/img01.jpeg" 
           alt="PROFILE IMAGE" 
           width={2500}
           height={4000}
-          className="absolute min-[680px]:mt-[10rem] top-[-25%] lg:left-[-30%] xl:left-[-40%] z-[60] max-w-[90%] w-[22rem] h-[18rem] lg:h-[22rem] min-w-[22rem] xl:h-[30rem] xl:w-[30rem] xl:min-w-[30rem] -[calc(15rem+5vw)] object-cover object-right outline outline-[3px] outline-primary outline-offset-[4px] rounded-[8rem] ease-250"
+          className="absolute min-[1024px]:mt-[13rem] min-[1024px]:top-[-10rem] lg:left-[-30%] xl:left-[-40%] z-[60] max-w-[90%] w-[22rem] h-[18rem] lg:h-[22rem] min-w-[22rem] xl:h-[30rem] xl:w-[30rem] xl:min-w-[30rem] object-cover object-right outline outline-[3px] outline-primary outline-offset-[4px] rounded-[8rem] ease-250"
         />
         <div className="relative z-1 flex flex-col gap-[2rem] h-full px-[2rem] ">
           <span className='text-teal-400 text-[2rem] font-[600] '>{'<ChochoDev/>'}</span>
