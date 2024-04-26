@@ -1,11 +1,13 @@
 import './globals.css';
 import type { Metadata } from 'next';
-import Head from 'next/head';
 import Navbar from './_components/navbar';
 
 export const metadata: Metadata = { 
   title: 'PORTFOLIO | FRONTEND DEVELOPER', 
-  description: 'Frontend Software Developer | Engineer. Emmanuel Michael Ayodeji, alias - Chocho'
+  description: 'Frontend Software Developer | Engineer. Emmanuel Michael Ayodeji, alias - Chocho',
+  icons: {
+    icon: "/assets/svgs/logo-light.svg",
+  },
 };
 
 export default function RootLayout({
@@ -15,10 +17,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <Head>
-        <link rel='icon' href='/assets/svgs/logo-light.svg' />
-      </Head>
       <body className="relative bg-teal-900 w-full min-h-screen h-max flex flex-col overflow-y-scroll snap-y snap-mandatory">
+        <link rel='icon' type='image/svg' href='/assets/svgs/logo-light.svg' />
         <Navbar />
         {children}
       </body>
