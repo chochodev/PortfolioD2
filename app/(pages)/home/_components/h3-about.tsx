@@ -14,7 +14,7 @@ const AboutSection: React.FC<SectionType> = ({extra_styles}) => {
       </div>
       <div className="w-full flex mdx:flex-row flex-col justify-between flex-wrap gap-x-[.5rem] gap-y-[2.5rem]">
         <div className="w-full mdx:w-[40%] h-max flex justify-center text-start flex-col gap-y-[.875rem] leading-[1.5rem]">
-          <p className="w-full h-max text-[1.07rem] text-white spacing-x-[.05rem]">
+          <p className="w-full h-max text-[1.25rem] text-white spacing-x-[.05rem]">
             Hi there! I’m Emmanuel Michael, a versatile full-stack web developer with expertise in enhancing and optimizing websites, I specialize in creating modern, user-friendly, and responsive web designs. I possess strong skills in developing web applications from the ground up.
           </p>
           <p className="w-full h-max text-[1.07rem] text-white spacing-x-[.05rem]">
@@ -32,7 +32,7 @@ const AboutSection: React.FC<SectionType> = ({extra_styles}) => {
           width={1500}
           height={1500}
           alt="PROFILE IMAGE"
-          className="w-full max-w-[25rem] h-auto border-[.25rem] border-darkSurface/50 shadow-md shadow-darkSuface/50 object-cover rounded-[5rem]"
+          className="w-full max-w-[25rem] mx-auto h-auto border-[.25rem] border-white/50 shadow-md shadow-white/5 object-cover rounded-[4rem]"
         />
         <div>
           

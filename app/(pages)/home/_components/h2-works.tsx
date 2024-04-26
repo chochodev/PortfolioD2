@@ -58,7 +58,7 @@ const WorkSection: React.FC<SectionType> = ({extra_styles}) => {
         <h2 className="w-max mx-auto text-[1.875rem] text-textDark font-bold tracking-tight ">WORKS</h2>
         <p className="w-max mx-auto text-textLight ">Some of my past works</p>
       </div>
-      <ul className="w-full min-h-[80vh] flex flex-wrap justify-evenly gap-y-[6rem] gap-x-[calc(3vw+.5rem)] py-[4rem]">
+      <ul className="w-full min-h-[80vh] flex flex-wrap justify-evenly gap-y-[6rem] gap-x-[calc(3vw+.5rem)] py-[4rem] rounded-[16px] overflow-hidden ">
         {/* PROJECTS */}
         {projects.map((project, index) => {
           return (
@@ -75,7 +75,7 @@ const WorkSection: React.FC<SectionType> = ({extra_styles}) => {
                 className={`w-full h-[calc(60%)] rounded-t-[16px] object-cover`} 
               />
               <div 
-                className={`bg-white/90 leading-[2rem] flex flex-col gap-y-[2rem] py-[1rem] px-[.75rem] rounded-b-[16px] shadow-sm shadow-surface/50 group-hover:bg-surface transition-all ease-in-out duration-200`}
+                className={`bg-white/90 leading-[2rem] flex flex-col gap-y-[2rem] py-[1rem] px-[.75rem] rounded-b-[16px] shadow-sm shadow-surface/50 group-hover:bg-surface ease-250`}
               >
                 <h3 className="text-[2rem] text-teal-900 font-bold">
                   {project.name}
