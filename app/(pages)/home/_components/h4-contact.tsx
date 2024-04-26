@@ -82,10 +82,10 @@ const ContactSection: React.FC<SectionType> = ({extra_styles}) => {
               </textarea>
             </div>
             <button 
-              className="bg-teal-800 w-max h-max flex gap-x-1 items-center justify-center px-[1.25rem] py-[.75rem] text-white rounded-[8px] shadow-sm hover:shadow-teal-800/50 hover:shadow-md focus:outline-1 focus:outline-teal-800/50 transition-all duration-250 ease-in-out"
+              className="bg-teal-800 w-max h-max flex gap-x-1 items-center justify-center px-[0.875rem] py-[.5rem] text-white rounded-[8px] shadow-sm hover:shadow-teal-800/50 hover:shadow-md focus:outline-1 focus:outline-teal-800/50 transition-all duration-250 ease-in-out"
             >
-              <RiMailSendLine size="25" color="white" />
-              <p className="h-max text-white text-[1.25rem] tracking-[.15rem]">SUBMIT</p>  
+              <RiMailSendLine size="20" color="white" />
+              <p className="h-max text-white text-[0.875rem] tracking-[.15rem]">SUBMIT</p>  
             </button>
           </div>
         </form>
