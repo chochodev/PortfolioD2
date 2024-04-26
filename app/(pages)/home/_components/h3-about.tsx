@@ -13,7 +13,7 @@ const AboutSection: React.FC<SectionType> = ({extra_styles}) => {
         <p className="text-slate-200">A few words about me</p>
       </div>
       <div className="w-full flex mdx:flex-row flex-col justify-between flex-wrap gap-x-[.5rem] gap-y-[2.5rem]">
-        <div className="w-full mdx:w-[40%] h-max flex justify-center text-start flex-col gap-y-[.875rem] leading-[1.5rem]">
+        <div className="w-full mdx:w-[40%] h-max flex justify-center text-start flex-col gap-y-[1.5rem] leading-[1.5rem]">
           <p className="w-full h-max text-[1.05rem] md:text-[1.25rem] text-teal-100 leading-[1.5rem] spacing-x-[.05rem]">
             Hi there! I’m Emmanuel Michael, a versatile full-stack web developer with expertise in enhancing and optimizing websites, I specialize in creating modern, user-friendly, and responsive web designs. I possess strong skills in developing web applications from the ground up.
           </p>

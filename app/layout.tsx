@@ -1,5 +1,6 @@
 import './globals.css';
 import type { Metadata } from 'next';
+import Head from 'next/head';
 import Navbar from './_components/navbar';
 
 export const metadata: Metadata = { 
@@ -14,6 +15,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <Head>
+        <link rel='icon' href='/assets/svgs/logo-light.svg' />
+      </Head>
       <body className="relative bg-teal-900 w-full min-h-screen h-max flex flex-col overflow-y-scroll snap-y snap-mandatory">
         <Navbar />
         {children}
