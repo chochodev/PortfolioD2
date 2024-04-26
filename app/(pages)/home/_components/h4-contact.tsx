@@ -36,14 +36,14 @@ const ContactSection: React.FC<SectionType> = ({extra_styles}) => {
               key={index}
               href={link.link || '#'}
               target="_blank"
-              className="h-max w-full flex flex-col items-center px-[0.5rem] gap-[0.5rem] py-[.875rem] "
+              className="h-max w-full flex flex-col items-center px-[0.5rem] gap-[1.25rem] md:gap-[0.5rem] py-[.875rem] "
             >
               <span className='flex justify-center items-center bg-teal-50 h-[4rem] lg:h-[3rem] w-[4rem] lg:w-[3rem] rounded-[8px] shadow-sm shadow-teal-400'>
                 {React.createElement(link.icon, {className: 'text-[1.5rem] lg:text-[1.25rem] text-slate-500 '})}
               </span>
-              <div className="flex flex-col items-center text-center gap-y-[0.5rem] ">              
-                <p className="text-teal-900 text-[.75rem] md:text-[0.875rem]">{link.text}</p>
-                <p className="text-teal-900 text-[.875rem] md:text-[1.07rem] font-bold">{link.name}</p>
+              <div className="flex flex-col items-center text-center gap-y-[1.25rem] md:gap-y-[0.5rem] ">              
+                <p className="text-teal-900 text-[1.15rem] md:text-[0.875rem]">{link.text}</p>
+                <p className="text-teal-900 text-[1.25rem] md:text-[1.07rem] font-bold">{link.name}</p>
               </div>
             </Link>
             ))}

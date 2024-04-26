@@ -64,7 +64,7 @@ const WorkSection: React.FC<SectionType> = ({extra_styles}) => {
           return (
           <li 
             key={index} 
-            className="group w-full md:w-[calc(15rem+5vw)] h-[25rem] rounded-t-md shadow-[0_0_25px_4px_rgba(0,0,0,0.25)] hover:shadow-[0_0_5px_5px_rgba(0,0,0,0.25)]  hover:translate-y-[-.5rem] transition-translate duration-500 ease-in-out"
+            className="group w-full md:w-[calc(15rem+5vw)] h-[25rem] rounded-t-[16px] shadow-[0_0_25px_4px_rgba(0,0,0,0.25)] hover:shadow-[0_0_5px_5px_rgba(0,0,0,0.25)]  hover:translate-y-[-.5rem] transition-translate duration-500 ease-in-out"
           >
             <Link href={project.url} target="_blank" className="w-full h-full flex flex-col ">
               <Image 
@@ -72,10 +72,10 @@ const WorkSection: React.FC<SectionType> = ({extra_styles}) => {
                 alt="PROJECT IMAGE" 
                 width={700} 
                 height={700}
-                className={`w-full h-[calc(60%)] rounded-t-md object-cover`} 
+                className={`w-full h-[calc(60%)] rounded-t-[16px] object-cover`} 
               />
               <div 
-                className={`bg-white/90 leading-[2rem] flex flex-col gap-y-[.75rem] py-[1rem] px-[.75rem] rounded-b-md shadow-sm shadow-surface/50 group-hover:bg-surface transition-all ease-in-out duration-200`}
+                className={`bg-white/90 leading-[2rem] flex flex-col gap-y-[.75rem] py-[1rem] px-[.75rem] rounded-b-[16px] shadow-sm shadow-surface/50 group-hover:bg-surface transition-all ease-in-out duration-200`}
               >
                 <h3 className="text-[2rem] text-textDark font-bold">
                   {project.name}

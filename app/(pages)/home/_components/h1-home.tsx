@@ -73,10 +73,10 @@ const HomeSection: React.FC<SectionType> = ({extra_styles}) => {
               {text: 'SvelteKit', icon:SiSvelte}
             ].map(({icon, text}, index) => (
               <div key={index} className='group cursor-pointer flex gap-[0.5rem] items-center h-[2.875rem] transform translate-x-0 hover:translate-x-[1rem] ease-250 '>
-                <p className='text-primary text-[1.05rem] xl:text-[1.15rem] group-hover:text-teal-300 ease-250 '>
+                <p className='text-primary text-[1.5rem] xl:text-[1.15rem] group-hover:text-teal-300 ease-250 '>
                   {text}
                 </p>
-                {React.createElement(icon, {className: "text-[1.375rem] text-teal-400 "})}
+                {React.createElement(icon, {className: "text-[1.875rem] xl:text-[1.375rem] text-teal-400 "})}
               </div>
             ))}
           </div>
