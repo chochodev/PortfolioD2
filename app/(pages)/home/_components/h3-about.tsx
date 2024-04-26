@@ -14,16 +14,16 @@ const AboutSection: React.FC<SectionType> = ({extra_styles}) => {
       </div>
       <div className="w-full flex mdx:flex-row flex-col justify-between flex-wrap gap-x-[.5rem] gap-y-[2.5rem]">
         <div className="w-full mdx:w-[40%] h-max flex justify-center text-start flex-col gap-y-[.875rem] leading-[1.5rem]">
-          <p className="w-full h-max text-[1.25rem] text-white spacing-x-[.05rem]">
+          <p className="w-full h-max text-[1.15rem] text-teal-100 leading-[1rem] spacing-x-[.05rem]">
             Hi there! I’m Emmanuel Michael, a versatile full-stack web developer with expertise in enhancing and optimizing websites, I specialize in creating modern, user-friendly, and responsive web designs. I possess strong skills in developing web applications from the ground up.
           </p>
-          <p className="w-full h-max text-[1.07rem] text-white spacing-x-[.05rem]">
+          <p className="w-full h-max text-[1.15rem] text-teal-100 leading-[1rem] spacing-x-[.05rem]">
             I am highly proficient in constructing scalable server systems to empower your websites. Whether it involves refactoring outdated backend code or starting from scratch, I am adept at ensuring robust functionality.
           </p>
-          <p className="w-full h-max text-[1.07rem] text-white spacing-x-[.05rem]">
+          <p className="w-full h-max text-[1.15rem] text-teal-100 leading-[1rem] spacing-x-[.05rem]">
             I am highly skilled in building scalable client-side applications that enhance the functionality of your websites. Whether it&apos;s revamping outdated frontend code or starting from scratch, I ensure robust and seamless user experiences.
           </p>
-          <p className="w-full h-max text-[1.07rem] text-white spacing-x-[.05rem]">
+          <p className="w-full h-max text-[1.15rem] text-teal-100 leading-[1rem] spacing-x-[.05rem]">
             Being well-versed in both frontend and backend development, I am equipped to provide valuable assistance for your existing or future web application projects. Count on me to be a valuable asset in bringing your vision to life.
           </p>
         </div>
