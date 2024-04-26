@@ -58,13 +58,13 @@ const WorkSection: React.FC<SectionType> = ({extra_styles}) => {
         <h2 className="w-max mx-auto text-[1.875rem] text-textDark font-bold tracking-tight ">WORKS</h2>
         <p className="w-max mx-auto text-textLight ">Some of my past works</p>
       </div>
-      <ul className="w-full min-h-[80vh] flex flex-wrap justify-evenly gap-y-[4rem] gap-x-[calc(3vw+.5rem)] py-[4rem]">
+      <ul className="w-full min-h-[80vh] flex flex-wrap justify-evenly gap-y-[6rem] gap-x-[calc(3vw+.5rem)] py-[4rem]">
         {/* PROJECTS */}
         {projects.map((project, index) => {
           return (
           <li 
             key={index} 
-            className="group w-full md:w-[calc(15rem+5vw)] h-[25rem] rounded-t-[16px] shadow-[0_0_25px_4px_rgba(0,0,0,0.25)] hover:shadow-[0_0_5px_5px_rgba(0,0,0,0.25)]  hover:translate-y-[-.5rem] transition-translate duration-500 ease-in-out"
+            className="group w-full md:w-[calc(15rem+5vw)] h-[30rem] rounded-t-[16px] shadow-[0_0_25px_4px_rgba(0,0,0,0.25)] hover:shadow-[0_0_5px_5px_rgba(0,0,0,0.25)]  hover:translate-y-[-.5rem] transition-translate duration-500 ease-in-out"
           >
             <Link href={project.url} target="_blank" className="w-full h-full flex flex-col ">
               <Image 
@@ -75,19 +75,19 @@ const WorkSection: React.FC<SectionType> = ({extra_styles}) => {
                 className={`w-full h-[calc(60%)] rounded-t-[16px] object-cover`} 
               />
               <div 
-                className={`bg-white/90 leading-[2rem] flex flex-col gap-y-[.75rem] py-[1rem] px-[.75rem] rounded-b-[16px] shadow-sm shadow-surface/50 group-hover:bg-surface transition-all ease-in-out duration-200`}
+                className={`bg-white/90 leading-[2rem] flex flex-col gap-y-[2rem] py-[1rem] px-[.75rem] rounded-b-[16px] shadow-sm shadow-surface/50 group-hover:bg-surface transition-all ease-in-out duration-200`}
               >
-                <h3 className="text-[2rem] text-textDark font-bold">
+                <h3 className="text-[2rem] text-teal-900 font-bold">
                   {project.name}
                 </h3>
-                <p className="w-full text-textLight text-sm line-clamp-2">
+                <p className="w-full text-slate-300 text-sm line-clamp-2">
                   {project.desc}
                 </p>
                 <div className="h-max flex justify-between items-end">
-                  <RiGithubFill size="35" color="#001C30" />
+                  <RiGithubFill className='text-[2.1875rem] text-teal-900' />
                   <div className="flex h-max items-center justify-center">
-                    <RxDotsHorizontal size="30" color="#001C30" />
-                    <RiArrowRightLine size="30" color="#001C30" />
+                    <RxDotsHorizontal className='text-[1.875rem] text-teal-900' />
+                    <RiArrowRightLine className='text-[1.875rem] text-teal-900' />
                   </div>
                 </div>
               </div>

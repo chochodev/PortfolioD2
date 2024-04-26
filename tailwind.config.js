@@ -39,7 +39,7 @@ module.exports = {
     extend: {
       colors: {
         surface: "#F5F4FC",
-        darkSurface: "#001C30",
+        darkSurface: "#134e4a",
         
         onSurface: "#E03E1A",
 
