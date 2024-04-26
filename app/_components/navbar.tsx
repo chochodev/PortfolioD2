@@ -186,7 +186,7 @@ const Navbar: React.FC = () => {
       <Transition
         as="nav"
         show={openNav}
-        className="fixed top-0 right-0 bg-[conic-gradient(at_bottom_left,_var(--tw-gradient-stops))] from-darkSurface via-pink-600 to-secondary w-[100%] h-[100vh] flex md:hidden flex-col gap-y-[3rem] px-[calc(1rem+5vw)] pt-[2rem]"
+        className="fixed top-0 right-0 bg-[conic-gradient(at_bottom_left,_var(--tw-gradient-stops))] from-teal-900 via-slate-600 to-teal-700 w-[100%] h-[100vh] flex md:hidden flex-col gap-y-[3rem] px-[calc(1rem+5vw)] pt-[2rem]"
         enter="width height transition-all opacity ease-in-out duration-400"
         enterFrom="w-0 h-0 opacity-0"
         enterTo="w-full height-full opacity-1"

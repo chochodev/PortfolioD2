@@ -28,21 +28,21 @@ const ContactSection: React.FC<SectionType> = ({extra_styles}) => {
         <p className="text-teal-400">Get in touch with me</p>
       </div>
 
-      <div className="w-full flex lg:flex-row flex-col flex-wrap justify-center gap-[calc(1.25rem+2vw)] p-[1rem]">
-        {/* SOCIAL LINKS */}
-        <div className="max-w-[20rem] w-full flex flex-col items-start gap-y-[.5rem]">
+      {/* SOCIAL LINKS */}
+      <div className="w-full flex lg:flex-row flex-col flex-wrap items-center justify-center gap-[calc(1.25rem+2vw)] p-[1rem]">
+        <div className="max-w-[20rem] w-full flex flex-col items-center gap-y-[0.5rem]">
           {links.map((link, index) => (
             <Link 
               key={index}
               href={link.link || '#'}
               target="_blank"
-              className="h-max w-full flex flex-col items-center px-[.5rem] gap-[2rem] py-[.875rem] "
+              className="h-max w-full flex flex-col items-center px-[0.5rem] gap-[0.5rem] py-[.875rem] "
             >
-              <span className='flex justify-center items-center bg-teal-50 h-[4rem] w-[4rem] rounded-[8px] shadow-sm shadow-teal-400'>
-                {React.createElement(link.icon, {className: 'text-[1.5625rem] text-slate-500 '})}
+              <span className='flex justify-center items-center bg-teal-50 h-[4rem] lg:h-[3rem] w-[4rem] lg:w-[3rem] rounded-[8px] shadow-sm shadow-teal-400'>
+                {React.createElement(link.icon, {className: 'text-[1.5rem] lg:text-[1.25rem] text-slate-500 '})}
               </span>
-              <div className="flex flex-col gap-y-[.5rem] ">              
-                <p className="text-teal-900 text-[.875rem] md:text-[1.07rem]">{link.text}</p>
+              <div className="flex flex-col items-center text-center gap-y-[0.5rem] ">              
+                <p className="text-teal-900 text-[.75rem] md:text-[0.875rem]">{link.text}</p>
                 <p className="text-teal-900 text-[.875rem] md:text-[1.07rem] font-bold">{link.name}</p>
               </div>
             </Link>

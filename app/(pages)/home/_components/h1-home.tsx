@@ -47,20 +47,20 @@ const HomeSection: React.FC<SectionType> = ({extra_styles}) => {
 
       {/* ::::::::::::::::::::::::::::::::::::::: PROFILE IMAGE */}
       <div 
-        className="relative bg-teal-800 z-1 h-[45rem] w-full xl:w-[40%] flex justify-center items-center border-l-[2px] border-primary"
+        className="relative bg-teal-800 z-1 h-[45rem] w-full xl:w-[40%] flex justify-center items-center mt-[6rem] xl:mt-0 border-t-[2px] xl:border-l-[2px] border-primary"
       >
         <Image 
           src="/images/img01.jpeg" 
           alt="PROFILE IMAGE" 
           width={2500}
           height={4000}
-          className="absolure top-[-100%] mdx:relative max-[720px]:mt-[-100%] xl:ml-[-100%] z-[10] max-w-[90%] w-[22rem] h-[22rem] lg:h-[22rem] min-w-[22rem] xl:h-[30rem] xl:w-[30rem] xl:min-w-[30rem] object-cover object-right outline outline-[3px] outline-primary outline-offset-[4px] rounded-[4rem] xl:rounded-[6rem] ease-250"
+          className="absolute top-[-30%] mdx:relative mdx:top-0 xl:ml-[-100%] z-[10] max-w-[90%] w-[22rem] h-[22rem] lg:h-[22rem] min-w-[22rem] xl:h-[30rem] xl:w-[30rem] xl:min-w-[30rem] object-cover object-right outline outline-[3px] outline-primary outline-offset-[4px] rounded-[4rem] xl:rounded-[6rem] ease-250"
         />
         <div 
-          className="xl:absolute top-0 right-[2rem] z-[6] flex flex-col h-full justify-center mdx:items-end gap-[2rem] pr-[2rem] "
+          className="xl:absolute top-0 right-[2rem] z-[6] flex flex-col h-full justify-center mdx:items-end gap-[2rem] pr-[2rem] pt-[5rem] xl:pt-0 "
         >
           <span className='text-teal-400 text-[1.5rem] xl:text-[2rem] font-[600] '>{'<ChochoDev/>'}</span>
-          <div className='flex flex-col justify-between items-end'>
+          <div className='flex flex-col justify-between mdx:items-end'>
             {[
               {text: 'HTML5', icon:RiHtml5Fill},
               {text: 'CSS3', icon:SiCss3},
@@ -73,7 +73,7 @@ const HomeSection: React.FC<SectionType> = ({extra_styles}) => {
               {text: 'SvelteKit', icon:SiSvelte}
             ].map(({icon, text}, index) => (
               <div key={index} className='group cursor-pointer flex gap-[0.5rem] items-center h-[2.875rem] transform translate-x-0 hover:translate-x-[1rem] ease-250 '>
-                <p className='text-primary text-[0.875rem] xl:text-[1.15rem] group-hover:text-teal-300 ease-250 '>
+                <p className='text-primary text-[1.05rem] xl:text-[1.15rem] group-hover:text-teal-300 ease-250 '>
                   {text}
                 </p>
                 {React.createElement(icon, {className: "text-[1.375rem] text-teal-400 "})}

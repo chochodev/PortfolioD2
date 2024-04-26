@@ -64,7 +64,7 @@ const WorkSection: React.FC<SectionType> = ({extra_styles}) => {
           return (
           <li 
             key={index} 
-            className="group w-full md:w-[calc(15rem+5vw)] h-[25rem] rounded-t-md shadow-sm hover:shadow-md hover:shadow-secondary/20 hover:translate-y-[-.5rem] transition-translate duration-500 ease-in-out"
+            className="group w-full md:w-[calc(15rem+5vw)] h-[25rem] rounded-t-md shadow-[0_0_25px_4px_rgba(0,0,0,0.25)] hover:shadow-[0_0_5px_5px_rgba(0,0,0,0.25)]  hover:translate-y-[-.5rem] transition-translate duration-500 ease-in-out"
           >
             <Link href={project.url} target="_blank" className="w-full h-full flex flex-col ">
               <Image 
