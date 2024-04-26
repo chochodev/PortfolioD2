@@ -72,7 +72,7 @@ const WorkSection: React.FC<SectionType> = ({extra_styles}) => {
                 alt="PROJECT IMAGE" 
                 width={700} 
                 height={700}
-                className={`w-full h-[calc(60%)] rounded-t-[16px] object-cover`} 
+                className={`w-full h-[calc(60%)] object-cover`} 
               />
               <div 
                 className={`bg-white flex-1 flex flex-col gap-y-[1.5rem] py-[1.5rem] px-[.75rem] rounded-b-[16px] overflow-hidden shadow-sm shadow-surface/50 ease-250`}
@@ -83,7 +83,7 @@ const WorkSection: React.FC<SectionType> = ({extra_styles}) => {
                 <p className="w-full text-slate-400 text-sm line-clamp-2">
                   {project.desc}
                 </p>
-                <div className="h-max flex justify-between items-end">
+                <div className="h-max rounded-b-[16px] flex justify-between items-end">
                   <RiGithubFill className='text-[2.1875rem] text-teal-900' />
                   <div className="flex h-max items-center justify-center">
                     <RxDotsHorizontal className='text-[1.875rem] text-teal-900' />
