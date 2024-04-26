@@ -1,6 +1,8 @@
 import './globals.css';
 import type { Metadata } from 'next';
 import Navbar from './_components/navbar';
+import Footer from './_components/footer';
+
 
 export const metadata: Metadata = { 
   title: 'PORTFOLIO | FRONTEND DEVELOPER', 
@@ -21,6 +23,7 @@ export default function RootLayout({
         <link rel='icon' type='image/svg' href='/assets/svgs/logo-light.svg' />
         <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   )
