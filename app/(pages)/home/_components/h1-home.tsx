@@ -3,11 +3,18 @@
 import Image from 'next/image';
 import React from 'react';
 import { RiAddCircleFill, RiHtml5Fill, RiJavascriptFill } from 'react-icons/ri';
-import { SiCss3, SiTailwindcss, SiSass, SiChakraui, SiReact, SiNextdotjs, SiSvelte } from "react-icons/si";
+import { 
+  SiCss3, 
+  SiTailwindcss, 
+  SiSass, 
+  SiChakraui, 
+  SiReact, 
+  SiNextdotjs, 
+  SiSvelte } from "react-icons/si";
 import Buttons from '@/components/buttons';
 
 interface SectionType {
-  extra_styles: string
+  extra_styles: string;
 }
 
 const HomeSection: React.FC<SectionType> = ({extra_styles}) => {

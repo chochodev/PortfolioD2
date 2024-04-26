@@ -7,7 +7,7 @@ import { RxDotsHorizontal } from 'react-icons/rx';
 import Link from 'next/link';
 
 interface SectionType {
-  extra_styles: string
+  extra_styles: string;
 }
 
 const WorkSection: React.FC<SectionType> = ({extra_styles}) => {
