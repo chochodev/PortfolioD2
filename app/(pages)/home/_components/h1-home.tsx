@@ -54,7 +54,7 @@ const HomeSection: React.FC<SectionType> = ({extra_styles}) => {
 
       {/* ::::::::::::::::::::::::::::::::::::::: PROFILE IMAGE */}
       <div 
-        className="relative bg-teal-800 z-1 h-[45rem] w-full xl:w-[40%] flex justify-center items-center mt-[10rem] xl:mt-0 border-t-[2px] xl:border-l-[2px] border-primary"
+        className="relative bg-teal-800 z-1 h-[45rem] w-full xl:w-[40%] flex justify-center items-center mt-[13rem] xl:mt-0 border-t-[2px] xl:border-l-[2px] border-primary"
       >
         <Image 
           src="/images/img01.jpeg" 
