@@ -16,9 +16,9 @@ interface SectionType {
 
 const ContactSection: React.FC<SectionType> = ({extra_styles}) => {
   const links = [
-    {name: '+234-9039108667', icon: RiPhoneLine, text: 'Call me', link: '#'},
+    {name: '+234-9039108667', icon: RiPhoneLine, text: 'Call me', link: 'https://wa.me/23439108667'},
     {name: 'chochodeveloper@gmail.com', icon: RiAtLine, text: 'Email me', link: '#'},
-    {name: 'MI_CHOCHO', icon: RiTwitterLine, text: 'Follow me on X', link: '#'}
+    {name: 'chochodev', icon: RiTwitterLine, text: 'Follow me on X', link: 'https://x.com/chochodev?s=09'}
   ]
 
   return (

@@ -3,7 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React, { useState, useEffect } from 'react';
 import { Transition } from '@headlessui/react';
-import { RiFacebookFill, RiWhatsappFill, RiLinkedinFill } from 'react-icons/ri';
+import { RiTwitterFill, RiWhatsappFill, RiLinkedinFill } from 'react-icons/ri';
 import { SiCoderwall, SiPluscodes } from 'react-icons/si';
 
 
@@ -34,9 +34,9 @@ const Navbar: React.FC = () => {
 
   const socialLinks = [
     {
-      name: 'Facebook',
-      icon: RiFacebookFill,
-      url: 'https://web.facebook.com/profile.php?id=100082896713464',
+      name: 'TwitterX',
+      icon: RiTwitterFill,
+      url: 'https://x.com/chochodev?s=09',
     },
     {
       name: 'WhatsApp',
